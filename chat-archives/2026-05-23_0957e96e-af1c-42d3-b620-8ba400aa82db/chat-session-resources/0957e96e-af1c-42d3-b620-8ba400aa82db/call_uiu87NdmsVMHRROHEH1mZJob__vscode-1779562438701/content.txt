@@ -1,0 +1,154 @@
+Successfully killed persistent terminal a81dd9d5-c341-4afd-a50e-a053659b880e. Final output before termination:
+tang@Tangs-MacBook-Pro Suwayomi-Server %  ps -Ao pid,ppid,stat,etime,command | rg 'gradle|GradleDaemon|kotlinc|java' | rg -v rg
+zsh: command not found: rg
+zsh: command not found: rg
+tang@Tangs-MacBook-Pro Suwayomi-Server %  ps -Ao pid,ppid,stat,etime,command | grep -E 'gradle|GradleDaemon|kotlinc|java' | grep -v grep
+77539     1 Ss         23:19 /Users/tang/Documents/suwayomi/jdk-21/Contents/Home/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /Users/tang/.gradle/wrapper/dists/gradle-9.5.1-bin/iq79hdu3mqx29lgffhp8bfmx/gradle-9.5.1/lib/gradle-daemon-main-9.5.1.jar -javaagent:/Users/tang/.gradle/wrapper/dists/gradle-9.5.1-bin/iq79hdu3mqx29lgffhp8bfmx/gradle-9.5.1/lib/agents/gradle-instrumentation-agent-9.5.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.5.1
+77600 77539 S          21:50 /Users/tang/Documents/suwayomi/jdk-21/Contents/Home/bin/java -cp /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-compat/2.3.20/649d59d16f0dc2427cc900a8b003496ad39aaa33/kotlin-build-tools-compat-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-impl/2.3.20/90a14213a621db275bf64e605e6c849d482656be/kotlin-build-tools-impl-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/2.3.20/7a050c09910ee587944bc2a7413e2d97d751f647/kotlin-tooling-core-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-cri-impl/2.3.20/52abdf3a26f3f71b94b90b45ad54f6a64610dcba/kotlin-build-tools-cri-impl-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-api/2.3.20/9d10b958f69ea67132d24ce9c759cf60465f29a5/kotlin-build-tools-api-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/2.3.20/11f74384a212c68bb6eb18ab6cd2cdf6354901b8/kotlin-compiler-runner-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.20/2fac4210c52c27b244305d60b0906e831f49be/kotlin-compiler-embeddable-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/2.3.20/d1f3f5c2efb2ed264dd3dfaf3ae8a581cbf47138/kotlin-daemon-client-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.20/ed866de74ad3d49086a27bbd75952cd186479436/kotlin-stdlib-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.20/4831ca1fea87f25bf39891ff56327b23b18c9bfa/kotlin-script-runtime-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.20/92a638246f2a388e2ccf43784623b1c685c93ab8/kotlin-daemon-embeddable-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx512m -XX:MaxMetaspaceSize=384m -XX:ReservedCodeCacheSize=320m -Dkotlin.environment.keepalive -ea -Dkotlin.daemon.custom.run.files.path.for.tests=/Users/tang/Library/Application Support/kotlin/daemon -XX:+UseCodeCacheFlushing -XX:+UseParallelGC -Dkotlin.daemon.initiator.marker.file=/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/kotlin-compiler-client-13990278575539186028-is-running --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath /Users/tang/Library/Application Support/kotlin/daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-compat/2.3.20/649d59d16f0dc2427cc900a8b003496ad39aaa33/kotlin-build-tools-compat-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-impl/2.3.20/90a14213a621db275bf64e605e6c849d482656be/kotlin-build-tools-impl-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/2.3.20/7a050c09910ee587944bc2a7413e2d97d751f647/kotlin-tooling-core-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-cri-impl/2.3.20/52abdf3a26f3f71b94b90b45ad54f6a64610dcba/kotlin-build-tools-cri-impl-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-api/2.3.20/9d10b958f69ea67132d24ce9c759cf60465f29a5/kotlin-build-tools-api-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/2.3.20/11f74384a212c68bb6eb18ab6cd2cdf6354901b8/kotlin-compiler-runner-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.20/2fac4210c52c27b244305d60b0906e831f49be/kotlin-compiler-embeddable-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/2.3.20/d1f3f5c2efb2ed264dd3dfaf3ae8a581cbf47138/kotlin-daemon-client-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.20/ed866de74ad3d49086a27bbd75952cd186479436/kotlin-stdlib-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.20/4831ca1fea87f25bf39891ff56327b23b18c9bfa/kotlin-script-runtime-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.20/92a638246f2a388e2ccf43784623b1c685c93ab8/kotlin-daemon-embeddable-2.3.20.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar
+77633 77539 S          20:36 /Users/tang/Documents/suwayomi/jdk-21/Contents/Home/bin/java -cp /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-compat/2.3.21/d96ec659bcf373765197eddfcf19995bfeed9896/kotlin-build-tools-compat-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-impl/2.3.21/c6c11fd63ff15677c11f14dbdbad624f8d8dbf04/kotlin-build-tools-impl-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/2.3.21/7a050c09910ee587944bc2a7413e2d97d751f647/kotlin-tooling-core-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-cri-impl/2.3.21/15fb91d42e1985323b900ed0e0c24e70e601387a/kotlin-build-tools-cri-impl-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-api/2.3.21/9b0a49a4d4c570c63a3a2553816bf0539536ab69/kotlin-build-tools-api-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/2.3.21/3245f77bb78bff349c35e0f4dfaede07e9d1249c/kotlin-compiler-runner-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.21/c4b47f8e33cdbeedd8c1415ab9f9ade870388162/kotlin-compiler-embeddable-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/2.3.21/8bd63e265ea5e6472f96f7e9e2431d02b4e69f3e/kotlin-daemon-client-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.21/8dafd7f0eb5efef35a446683a2774fef61c68aeb/kotlin-script-runtime-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.21/384c12222b10aaa06fdd2163435709efdade5a02/kotlin-daemon-embeddable-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx512m -XX:MaxMetaspaceSize=384m -XX:ReservedCodeCacheSize=320m -Dkotlin.environment.keepalive -ea -Dkotlin.daemon.custom.run.files.path.for.tests=/Users/tang/Library/Application Support/kotlin/daemon -XX:+UseCodeCacheFlushing -XX:+UseParallelGC -Dkotlin.daemon.initiator.marker.file=/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/kotlin-compiler-client-16414678288951757279-is-running --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath /Users/tang/Library/Application Support/kotlin/daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-compat/2.3.21/d96ec659bcf373765197eddfcf19995bfeed9896/kotlin-build-tools-compat-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-impl/2.3.21/c6c11fd63ff15677c11f14dbdbad624f8d8dbf04/kotlin-build-tools-impl-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-tooling-core/2.3.21/7a050c09910ee587944bc2a7413e2d97d751f647/kotlin-tooling-core-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-cri-impl/2.3.21/15fb91d42e1985323b900ed0e0c24e70e601387a/kotlin-build-tools-cri-impl-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-tools-api/2.3.21/9b0a49a4d4c570c63a3a2553816bf0539536ab69/kotlin-build-tools-api-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/2.3.21/3245f77bb78bff349c35e0f4dfaede07e9d1249c/kotlin-compiler-runner-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.21/c4b47f8e33cdbeedd8c1415ab9f9ade870388162/kotlin-compiler-embeddable-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/2.3.21/8bd63e265ea5e6472f96f7e9e2431d02b4e69f3e/kotlin-daemon-client-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.21/a2ee2c4e220fee522f0451b723bab2a43f3481a7/kotlin-stdlib-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.21/8dafd7f0eb5efef35a446683a2774fef61c68aeb/kotlin-script-runtime-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.21/384c12222b10aaa06fdd2163435709efdade5a02/kotlin-daemon-embeddable-2.3.21.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar
+80534 80522 Ss         03:37 /Users/tang/.jdks/temurin-21/Contents/Home/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED -XX:MaxMetaspaceSize=384m -XX:+HeapDumpOnOutOfMemoryError -Xms256m -Xmx512m -Dfile.encoding=UTF-8 -Duser.country=US -Duser.language=en -Duser.variant -cp /Users/tang/.gradle/wrapper/dists/gradle-9.3.1-bin/23ovyewtku6u96viwx3xl3oks/gradle-9.3.1/lib/gradle-daemon-main-9.3.1.jar -javaagent:/Users/tang/.gradle/wrapper/dists/gradle-9.3.1-bin/23ovyewtku6u96viwx3xl3oks/gradle-9.3.1/lib/agents/gradle-instrumentation-agent-9.3.1.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.3.1
+80553 80534 R          03:03 /Users/tang/.jdks/temurin-21/Contents/Home/bin/java -cp /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.10/6e349e33b398eb4f0227ceb5b99db2535a982670/kotlin-compiler-embeddable-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.10/8b80e2f80a3b7daa99c16017f91d4c72cd8b31a6/kotlin-stdlib-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.10/1964f711f069f184f7848971fdcbdd15f26ef79/kotlin-script-runtime-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.10/5d578a9d479980dcf1144e721cb3502f0c23316e/kotlin-daemon-embeddable-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar -Djava.awt.headless=true -Djava.rmi.server.hostname=127.0.0.1 -Xmx512m -XX:MaxMetaspaceSize=384m -XX:ReservedCodeCacheSize=320m -Dkotlin.environment.keepalive -ea -XX:+UseCodeCacheFlushing -XX:+UseParallelGC -Dkotlin.daemon.initiator.marker.file=/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/kotlin-compiler-in-uwayomierver-13208740986091595563.alive --add-exports java.base/sun.nio.ch=ALL-UNNAMED org.jetbrains.kotlin.daemon.KotlinCompileDaemon --daemon-runFilesPath /Users/tang/Library/Application Support/kotlin/daemon --daemon-autoshutdownIdleSeconds=7200 --daemon-compilerClasspath /Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/2.3.10/6e349e33b398eb4f0227ceb5b99db2535a982670/kotlin-compiler-embeddable-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.3.10/8b80e2f80a3b7daa99c16017f91d4c72cd8b31a6/kotlin-stdlib-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/2.3.10/1964f711f069f184f7848971fdcbdd15f26ef79/kotlin-script-runtime-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.6.10/1cbe9c92c12a94eea200d23c2bbaedaf3daf5132/kotlin-reflect-1.6.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-embeddable/2.3.10/5d578a9d479980dcf1144e721cb3502f0c23316e/kotlin-daemon-embeddable-2.3.10.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.8.0/ac1dc37a30a93150b704022f8d895ee1bd3a36b3/kotlinx-coroutines-core-jvm-1.8.0.jar:/Users/tang/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar
+80522 80278 S+         03:41 /Users/tang/.jdks/temurin-21/Contents/Home/bin/java -Xmx64m -Xms64m -Dorg.gradle.appname=gradlew -jar /Users/tang/Documents/GitHub/Suwayomi-Server/gradle/wrapper/gradle-wrapper.jar --no-daemon --console=plain :server:downloadWebUI :server:shadowJar :server:test
+tang@Tangs-MacBook-Pro Suwayomi-Server %  tail -n 80 '/Users/tang/Library/Application Support/Code/User/workspaceStorage/61e56e9a72a1e988f1d89520a489f2b7/GitHub.copilot-chat/chat-session-resources/0957e96e-af1c-42d3-b620-8ba400aa82db/call_vBmBtYFCiJ5v99sGy68e7vPH__vscode-1779562438695/content.txt'
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/os/MessageQueue.java:358: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/AbstractCursor.java:385: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:256: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_OFF = 0;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:268: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_AUTO = 1;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:277: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_ON = 2;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1590: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void setForceDark(@ForceDark int forceDark) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1602: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public @ForceDark int getForceDark() {
+                          ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1223: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static NetworkCapabilities networkCapabilitiesForType(int type) {
+                                      ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1848: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void reportInetCondition(int networkType, int percentage) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/NetworkInfo.java:424: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String getReason() {
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 warnings
+
+> Task :AndroidCompat:classes
+> Task :AndroidCompat:jar
+
+> Task :server:server-config:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config/src/main/kotlin/suwayomi/tachidesk/server/ServerConfig.kt:35:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar
+
+> Task :server:server-config-generate:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config-generate/src/main/kotlin/suwayomi/tachidesk/server/settings/generation/SettingsGenerator.kt:38:30 Cannot access 'SystemPropertyOverridableConfigModule' which is a supertype of 'ServerConfig'. This may be forbidden soon. Check the module classpath for missing or conflicting dependencies.
+
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+
+> Task :server:server-config-generate:generateSettings
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+
+> Task :server:processResources
+> Task :server:processTestResources
+> Task :server:compileKotlin
+tang@Tangs-MacBook-Pro Suwayomi-Server %  tail -n 40 '/Users/tang/Library/Application Support/Code/User/workspaceStorage/61e56e9a72a1e988f1d89520a489f2b7/GitHub.copilot-chat/chat-session-resources/0957e96e-af1c-42d3-b620-8ba400aa82db/call_PljiLWGsFnCFHR8uo0tJnEfb__vscode-1779562438697/content.txt'
+
+> Task :server:server-config:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config/src/main/kotlin/suwayomi/tachidesk/server/ServerConfig.kt:35:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar
+
+> Task :server:server-config-generate:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config-generate/src/main/kotlin/suwayomi/tachidesk/server/settings/generation/SettingsGenerator.kt:38:30 Cannot access 'SystemPropertyOverridableConfigModule' which is a supertype of 'ServerConfig'. This may be forbidden soon. Check the module classpath for missing or conflicting dependencies.
+
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+
+> Task :server:server-config-generate:generateSettings
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+
+> Task :server:processResources
+> Task :server:processTestResources
+> Task :server:compileKotlin
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --no-daemon -q :server:downloadWebUI :server:shadowJar && echo SHADOW_OK
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+<===========--> 90% EXECUTING [2m 13s]
+> IDLE
+> :server:compileKotlin
+^C export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --no-daemon -q :server:test && echo TEST_OK
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-
+21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --no-daemon
+ -q :server:test && echo TEST_OK
+<==========---> 81% EXECUTING [2m 18s]
+> :server:compileKotlin

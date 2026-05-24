@@ -1,0 +1,452 @@
+2026-05-23T20:59:09.960+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:7406:ffb0:88ec:13f7%utun19
+2026-05-23T20:59:09.961+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun18
+2026-05-23T20:59:09.962+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.962+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:d49b:3a9c:8350:cad0%utun18
+2026-05-23T20:59:09.963+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun17
+2026-05-23T20:59:09.964+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.965+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:b2a4:7606:aa5d:dce0%utun17
+2026-05-23T20:59:09.965+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun16
+2026-05-23T20:59:09.966+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.967+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:44c9:da10:dc2d:8210%utun16
+2026-05-23T20:59:09.967+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun8
+2026-05-23T20:59:09.968+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.968+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:3d37:9150:9faa:d28c%utun8
+2026-05-23T20:59:09.968+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun7
+2026-05-23T20:59:09.969+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.970+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:9708:7fc7:4c5a:3edf%utun7
+2026-05-23T20:59:09.971+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun6
+2026-05-23T20:59:09.971+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.972+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:da98:4aa6:7f98:6563%utun6
+2026-05-23T20:59:09.972+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun5
+2026-05-23T20:59:09.973+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.974+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:cfb3:c405:7d67:ec03%utun5
+2026-05-23T20:59:09.974+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun3
+2026-05-23T20:59:09.975+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.975+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:ce81:b1c:bd2c:69e%utun3
+2026-05-23T20:59:09.976+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun2
+2026-05-23T20:59:09.976+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.977+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:f4ce:16a0:b5fd:6a0d%utun2
+2026-05-23T20:59:09.977+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun1
+2026-05-23T20:59:09.977+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.978+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:5129:9c5a:e5df:efaf%utun1
+2026-05-23T20:59:09.978+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface utun0
+2026-05-23T20:59:09.979+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.979+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:d02d:b799:fb2f:d251%utun0
+2026-05-23T20:59:09.979+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface llw0
+2026-05-23T20:59:09.979+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.980+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:9c8a:31ff:fefa:b53f%llw0
+2026-05-23T20:59:09.980+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface awdl0
+2026-05-23T20:59:09.980+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.981+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:9c8a:31ff:fefa:b53f%awdl0
+2026-05-23T20:59:09.981+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface ap1
+2026-05-23T20:59:09.981+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.982+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:9001:60ff:fefa:e3b%ap1
+2026-05-23T20:59:09.982+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface en0
+2026-05-23T20:59:09.982+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? false
+2026-05-23T20:59:09.983+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /2a02:1811:c8b:3500:98f3:288:8db:f795%en0
+2026-05-23T20:59:09.983+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /2a02:1811:c8b:3500:14f6:21c4:2e8a:59fe%en0
+2026-05-23T20:59:09.984+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /fe80:0:0:0:10d2:3d8d:cfd3:b5e7%en0
+2026-05-23T20:59:09.984+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding remote address /192.168.0.252
+2026-05-23T20:59:09.984+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding IP addresses for network interface lo0
+2026-05-23T20:59:09.985+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Is this a loopback interface? true
+2026-05-23T20:59:09.985+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%
+lo0
+2026-05-23T20:59:09.985+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo0
+2026-05-23T20:59:09.986+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.I
+netAddresses] Adding loopback address /127.0.0.1
+2026-05-23T20:59:10.121+0200 [INFO] [org.gradle.launcher.daemon.server.Daemon] s
+tart() called on daemon - DefaultDaemonContext[uid=dd41f66f-9fa9-4987-ab77-11e4a
+e10d680,javaHome=/Users/tang/.jdks/temurin-21/Contents/Home,javaVersion=21,javaV
+endor=Eclipse Adoptium,daemonRegistryDir=/Users/tang/.gradle/daemon,pid=80534,id
+leTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMo
+de=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,
+-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Du
+ser.variant]
+2026-05-23T20:59:10.137+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.T
+cpIncomingConnector] Listening on [d0a4b5c4-9482-4f37-9c1b-16242ed6841d port:531
+93, addresses:[localhost/127.0.0.1]].
+2026-05-23T20:59:10.188+0200 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] 
+Daemon starting at: Sat May 23 20:59:10 CEST 2026, with address: [d0a4b5c4-9482-
+4f37-9c1b-16242ed6841d port:53193, addresses:[localhost/127.0.0.1]]
+2026-05-23T20:59:10.199+0200 [INFO] [org.gradle.launcher.daemon.server.DaemonReg
+istryUpdater] Advertising the daemon address to the clients: [d0a4b5c4-9482-4f37
+-9c1b-16242ed6841d port:53193, addresses:[localhost/127.0.0.1]]
+2026-05-23T20:59:10.200+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRe
+gistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=dd41f66f-9fa9
+-4987-ab77-11e4ae10d680,javaHome=/Users/tang/.jdks/temurin-21/Contents/Home,java
+Version=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/tang/.gradle/dae
+mon,pid=80534,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,
+nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnO
+utOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser
+.language=en,-Duser.variant]
+2026-05-23T20:59:10.219+0200 [DEBUG] [org.gradle.launcher.daemon.registry.Persis
+tentDaemonRegistry] Storing daemon address: [d0a4b5c4-9482-4f37-9c1b-16242ed6841
+d port:53193, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[ui
+d=dd41f66f-9fa9-4987-ab77-11e4ae10d680,javaHome=/Users/tang/.jdks/temurin-21/Con
+tents/Home,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/t
+ang/.gradle/daemon,pid=80534,idleTimeout=120000,priority=NORMAL,applyInstrumenta
+tionAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-
+XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.co
+untry=US,-Duser.language=en,-Duser.variant]
+2026-05-23T20:59:10.248+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-05-23T20:59:10.255+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Lock acquired on daemon addresses registry.
+2026-05-23T20:59:10.272+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Releasing lock on daemon addresses registry.
+2026-05-23T20:59:10.274+0200 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daem
+on] Daemon server started.
+2026-05-23T20:59:10.276+0200 [DEBUG] [org.gradle.launcher.daemon.bootstrap.Daemo
+nStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2026-05-23T20:59:10.293+0200 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] 
+stopOnExpiration() called on daemon
+2026-05-23T20:59:10.295+0200 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] 
+awaitExpiration() called on daemon
+2026-05-23T20:59:10.296+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] daemon is running. Sleeping until state changes.
+2026-05-23T20:59:10.328+0200 [DEBUG] [org.gradle.internal.remote.internal.inet.T
+cpIncomingConnector] Accepted connection from /127.0.0.1:53194 to /127.0.0.1:531
+93.
+2026-05-23T20:59:10.380+0200 [DEBUG] [org.gradle.launcher.daemon.server.Synchron
+izedDispatchConnection] thread 34: received class org.gradle.launcher.daemon.pro
+tocol.Build
+2026-05-23T20:59:10.380+0200 [DEBUG] [org.gradle.launcher.daemon.server.DefaultD
+aemonConnection] thread 34: Received non-IO message from client: Build{id=89da9d
+1d-8138-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi
+-Server}
+2026-05-23T20:59:10.380+0200 [INFO] [org.gradle.launcher.daemon.server.DefaultIn
+comingConnectionHandler] Received command: Build{id=89da9d1d-8138-4d10-bc6b-8905
+83c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi-Server}.
+2026-05-23T20:59:10.381+0200 [DEBUG] [org.gradle.launcher.daemon.server.DefaultI
+ncomingConnectionHandler] Starting executing command: Build{id=89da9d1d-8138-4d1
+0-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi-Server} wi
+th connection: socket connection from /127.0.0.1:53193 to /127.0.0.1:53194.
+2026-05-23T20:59:10.384+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] Command execution: started DaemonCommandExecution[command = Buil
+d{id=89da9d1d-8138-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitH
+ub/Suwayomi-Server}, connection = DefaultDaemonConnection: socket connection fro
+m /127.0.0.1:53193 to /127.0.0.1:53194] after 0.004266666666666667 minutes of id
+le
+2026-05-23T20:59:10.385+0200 [INFO] [org.gradle.launcher.daemon.server.DaemonReg
+istryUpdater] Marking the daemon as busy, address: [d0a4b5c4-9482-4f37-9c1b-1624
+2ed6841d port:53193, addresses:[localhost/127.0.0.1]]
+2026-05-23T20:59:10.385+0200 [DEBUG] [org.gradle.launcher.daemon.registry.Persis
+tentDaemonRegistry] Marking busy by address: [d0a4b5c4-9482-4f37-9c1b-16242ed684
+1d port:53193, addresses:[localhost/127.0.0.1]]
+2026-05-23T20:59:10.386+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-05-23T20:59:10.386+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Lock acquired on daemon addresses registry.
+2026-05-23T20:59:10.390+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockM
+anager] Releasing lock on daemon addresses registry.
+2026-05-23T20:59:10.391+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] resetting idle timer
+2026-05-23T20:59:10.391+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] daemon is running. Sleeping until state changes.
+2026-05-23T20:59:10.393+0200 [INFO] [org.gradle.launcher.daemon.server.exec.Star
+tBuildOrRespondWithBusy] Daemon is about to start building Build{id=89da9d1d-813
+8-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi-Serve
+r}. Dispatching build started information...
+2026-05-23T20:59:10.393+0200 [DEBUG] [org.gradle.launcher.daemon.server.Synchron
+izedDispatchConnection] thread 36: dispatching org.gradle.launcher.daemon.protoc
+ol.BuildStarted@58305cf0
+2026-05-23T20:59:10.395+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.Est
+ablishBuildEnvironment] Configuring env variables: [PATH, MallocNanoZone, ZDOTDI
+R, GIT_MERGE_AUTOEDIT, PYTHON_BASIC_REPL, GIT_PAGER, JAVA_HOME, GIT_EDITOR, TERM
+, LANG, VSCODE_GIT_IPC_HANDLE, VSCODE_PYTHON_AUTOACTIVATE_GUARD, COMMAND_MODE, V
+SCODE_GIT_ASKPASS_MAIN, VSCODE_INJECTION, COLORTERM, PYTHONSTARTUP, VSCODE_PROFI
+LE_INITIALIZED, VSCODE_GIT_ASKPASS_EXTRA_ARGS, LOGNAME, VSCODE_GIT_ASKPASS_NODE,
+ TERM_PROGRAM_VERSION, XPC_SERVICE_NAME, PWD, GIT_ASKPASS, __CFBundleIdentifier,
+ COPILOT_AGENT, SHELL, TERM_PROGRAM, USER_ZDOTDIR, USER, TMPDIR, SSH_AUTH_SOCK, 
+XPC_FLAGS, VSCODE_LOGIN_INITIALIZED, __CF_USER_TEXT_ENCODING, SHLVL, HOME]
+2026-05-23T20:59:10.402+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.Log
+ToClient] About to start relaying all logs to the client via the connection.
+2026-05-23T20:59:10.402+0200 [INFO] [org.gradle.launcher.daemon.server.exec.LogT
+oClient] The client will now receive all logging from the daemon (pid: 80534). T
+he daemon log file: /Users/tang/.gradle/daemon/9.3.1/daemon-80534.out.log
+2026-05-23T20:59:10.406+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.Req
+uestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=89d
+a9d1d-8138-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suway
+omi-Server}
+2026-05-23T20:59:10.406+0200 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daem
+onStateCoordinator] Daemon will be stopped at the end of the build 
+2026-05-23T20:59:10.408+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] Stop as soon as idle requested. The daemon is busy
+2026-05-23T20:59:10.409+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonSt
+ateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-05-23T20:59:10.417+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.Exe
+cuteBuild] The daemon has started executing the build.
+2026-05-23T20:59:10.417+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.Exe
+cuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=dd41f66
+f-9fa9-4987-ab77-11e4ae10d680,javaHome=/Users/tang/.jdks/temurin-21/Contents/Hom
+e,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/tang/.grad
+le/daemon,pid=80534,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent
+=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapD
+umpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,
+-Duser.language=en,-Duser.variant]
+Type-safe project accessors is an incubating feature.
+Download https://github.com/Suwayomi/Suwayomi-WebUI-preview/releases/download/r2
+643/Suwayomi-WebUI-r2643.zip
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' 
+and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-pa
+rameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:9:8 'expect'/'act
+ual' classes (including interfaces, objects, annotations, enums, and 'actual' ty
+pealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to sup
+press this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:10:17 'expect'/'a
+ctual' classes (including interfaces, objects, annotations, enums, and 'actual' 
+typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to s
+uppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:260:17 'expect'/'
+actual' classes (including interfaces, objects, annotations, enums, and 'actual'
+ typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to 
+suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:12:8 'expect'/'actua
+l' classes (including interfaces, objects, annotations, enums, and 'actual' type
+aliases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppr
+ess this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:17:10 'expect'/'actu
+al' classes (including interfaces, objects, annotations, enums, and 'actual' typ
+ealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to supp
+ress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generat
+ed/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:392:10 'expect'/'act
+ual' classes (including interfaces, objects, annotations, enums, and 'actual' ty
+pealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to sup
+press this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' 
+and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-pa
+rameters
+This warning will become an error in future releases.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' 
+and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-pa
+rameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:263:18 This declaration o
+verrides a deprecated member but is not marked as deprecated itself. Add the '@D
+eprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:271:18 This declaration o
+verrides a deprecated member but is not marked as deprecated itself. Add the '@D
+eprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:970:18 This declaration o
+verrides a deprecated member but is not marked as deprecated itself. Add the '@D
+eprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:972:18 This declaration o
+verrides a deprecated member but is not marked as deprecated itself. Add the '@D
+eprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:235:32 'fun onReceive
+dError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!
+): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:243:32 'fun onReceive
+dError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!
+): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:269:28 'fun onReceive
+dError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!
+): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:444:43 Unnecessary sa
+fe call on a non-null receiver of type 'CefRequest'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:498:30 'constructor()
+: RenderProcessGoneDetail' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:843:47 'interface Pic
+tureListener : Any' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/ja
+va/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:865:30 Unchecked cast
+ of 'KClass<out Any>' to 'KClass<Any>'.
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/database/sqlite/SQLiteDatabase.java:242: warning: [removal] finalize() in Objec
+t has been deprecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/database/sqlite/SQLiteDatabase.java:246: warning: [removal] finalize() in Objec
+t has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/content/pm/PackageManager.java:3369: warning: [dep-ann] deprecated item is not 
+annotated with @Deprecated
+    public abstract int getInstantAppCookieMaxSize();
+                        ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/content/Intent.java:4193: warning: [dep-ann] deprecated item is not annotated w
+ith @Deprecated
+    public static final int FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET = 0x00080000;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/os/MessageQueue.java:354: warning: [removal] finalize() in Object has been depr
+ecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/os/MessageQueue.java:358: warning: [removal] finalize() in Object has been depr
+ecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/database/AbstractCursor.java:385: warning: [removal] finalize() in Object has b
+een deprecated and marked for removal
+    protected void finalize() {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/webkit/WebSettings.java:256: warning: [dep-ann] deprecated item is not annotate
+d with @Deprecated
+    public static final int FORCE_DARK_OFF = 0;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/webkit/WebSettings.java:268: warning: [dep-ann] deprecated item is not annotate
+d with @Deprecated
+    public static final int FORCE_DARK_AUTO = 1;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/webkit/WebSettings.java:277: warning: [dep-ann] deprecated item is not annotate
+d with @Deprecated
+    public static final int FORCE_DARK_ON = 2;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/webkit/WebSettings.java:1590: warning: [dep-ann] deprecated item is not annotat
+ed with @Deprecated
+    public void setForceDark(@ForceDark int forceDark) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/webkit/WebSettings.java:1602: warning: [dep-ann] deprecated item is not annotat
+ed with @Deprecated
+    public @ForceDark int getForceDark() {
+                          ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/net/ConnectivityManager.java:1223: warning: [dep-ann] deprecated item is not an
+notated with @Deprecated
+    public static NetworkCapabilities networkCapabilitiesForType(int type) {
+                                      ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/net/ConnectivityManager.java:1848: warning: [dep-ann] deprecated item is not an
+notated with @Deprecated
+    public void reportInetCondition(int networkType, int percentage) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android
+/net/NetworkInfo.java:424: warning: [dep-ann] deprecated item is not annotated w
+ith @Deprecated
+    public String getReason() {
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 warnings
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' 
+and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-pa
+rameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config/src/
+main/kotlin/suwayomi/tachidesk/server/ServerConfig.kt:35:8 'enum class KoreaderS
+yncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for mi
+gration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' 
+and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-pa
+rameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config-gene
+rate/src/main/kotlin/suwayomi/tachidesk/server/settings/generation/SettingsGener
+ator.kt:38:30 Cannot access 'SystemPropertyOverridableConfigModule' which is a s
+upertype of 'ServerConfig'. This may be forbidden soon. Check the module classpa
+th for missing or conflicting dependencies.
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generat
+ed/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generat
+ed/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+Daemon vm is shutting down... The daemon has exited normally or was terminated i
+n response to a user interrupt.
+tang@Tangs-MacBook-Pro Suwayomi-Server % 

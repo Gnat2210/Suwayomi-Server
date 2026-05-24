@@ -1,0 +1,312 @@
+Output of terminal ca3a5efb-26df-471e-809a-8dcb2b6148c0:
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --console=plain -Dorg.gradle.jvmargs='-Xms512m -Xmx2048m -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8' :server:run
+Starting a Gradle Daemon (subsequent builds will be faster)
+Type-safe project accessors is an incubating feature.
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :AndroidCompat:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:Config:compileJava NO-SOURCE
+> Task :AndroidCompat:Config:processResources NO-SOURCE
+> Task :AndroidCompat:Config:classes UP-TO-DATE
+> Task :AndroidCompat:Config:jar UP-TO-DATE
+> Task :AndroidCompat:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:compileJava UP-TO-DATE
+> Task :AndroidCompat:processResources UP-TO-DATE
+> Task :AndroidCompat:classes UP-TO-DATE
+> Task :AndroidCompat:jar UP-TO-DATE
+> Task :server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:generateBuildConfigClasses
+> Task :server:generateJte UP-TO-DATE
+> Task :server:i18n:kmpPartiallyResolvedDependenciesChecker
+> Task :server:i18n:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:i18n:generateMRcommonMain UP-TO-DATE
+> Task :server:i18n:generateMRjvmMain UP-TO-DATE
+> Task :server:i18n:compileKotlinJvm UP-TO-DATE
+> Task :server:i18n:compileJvmMainJava NO-SOURCE
+> Task :server:i18n:jvmProcessResources UP-TO-DATE
+> Task :server:i18n:processJvmMainResources SKIPPED
+> Task :server:i18n:jvmMainClasses UP-TO-DATE
+> Task :server:i18n:jvmJar UP-TO-DATE
+> Task :server:server-config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config:compileKotlin UP-TO-DATE
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:processResources NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar UP-TO-DATE
+> Task :server:server-config-generate:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config-generate:compileKotlin UP-TO-DATE
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:processResources NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+> Task :server:server-config-generate:generateSettings UP-TO-DATE
+> Task :server:processResources UP-TO-DATE
+
+> Task :server:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/queries/InfoQuery.kt:20:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+
+> Task :server:compileJava NO-SOURCE
+> Task :server:classes UP-TO-DATE
+
+> Task :server:run
+21:14:20.897 [Thread-0] INFO suwayomi.tachidesk.server.ServerSetup -- Starting Android Main Loop
+21:14:21.798 [main] INFO suwayomi.tachidesk.server.ServerSetup -- Running Suwayomi-Server v2.1.2078
+21:14:21.809 [main] DEBUG suwayomi.tachidesk.server.ServerSetup -- Loaded config:
+{
+    "android" : {
+        "app" : {
+            "debug" : true,
+            "packageName" : "eu.kanade.tachiyomi"
+        },
+        "files" : {
+            "cacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/cache",
+            "codeCacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/code_cache",
+            "dataDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/data",
+            "databasesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/databases",
+            "downloadCacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/downloadCache",
+            "externalCacheDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/cache"
+            ],
+            "externalFilesDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/files"
+            ],
+            "externalMediaDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/media"
+            ],
+            "externalStorageDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata",
+            "filesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/files",
+            "noBackupFilesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/no_backup",
+            "obbDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/obb"
+            ],
+            "packageDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/android-compat/packages",
+            "prefsDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/shared_prefs",
+            "rootDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata"
+        },
+        "system" : {
+            "isDebuggable" : true
+        }
+    },
+    "androidcompat" : {
+        "rootDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat"
+    },
+    "server" : {
+        "authMode" : "NONE",
+        "authPassword" : "[REDACTED]",
+        "authUsername" : "[REDACTED]",
+        "autoBackupIncludeCategories" : true,
+        "autoBackupIncludeChapters" : true,
+        "autoBackupIncludeClientData" : true,
+        "autoBackupIncludeHistory" : true,
+        "autoBackupIncludeManga" : true,
+        "autoBackupIncludeServerSettings" : true,
+        "autoBackupIncludeTracking" : true,
+        "autoDownloadIgnoreReUploads" : false,
+        "autoDownloadNewChapters" : false,
+        "autoDownloadNewChaptersLimit" : 0,
+        "backupInterval" : 1,
+        "backupPath" : "",
+        "backupTTL" : 14,
+        "backupTime" : "00:00",
+        "databasePassword" : "[REDACTED]",
+        "databaseType" : "H2",
+        "databaseUrl" : "postgresql://localhost:5432/suwayomi",
+        "databaseUsername" : "[REDACTED]",
+        "debugLogsEnabled" : false,
+        "downloadAsCbz" : false,
+        "downloadsPath" : "",
+        "electronPath" : "",
+        "excludeCompleted" : true,
+        "excludeEntryWithUnreadChapters" : true,
+        "excludeNotStarted" : true,
+        "excludeUnreadChapters" : true,
+        "extensionRepos" : "[REDACTED]",
+        "flareSolverrAsResponseFallback" : false,
+        "flareSolverrEnabled" : false,
+        "flareSolverrSessionName" : "suwayomi",
+        "flareSolverrSessionTtl" : 15,
+        "flareSolverrTimeout" : 60,
+        "flareSolverrUrl" : "http://localhost:8191",
+        "globalUpdateInterval" : 12,
+        "initialOpenInBrowserEnabled" : true,
+        "ip" : "0.0.0.0",
+        "jwtAudience" : "suwayomi-server-api",
+        "jwtRefreshExpiry" : "60d",
+        "jwtTokenExpiry" : "5m",
+        "koreaderSyncChecksumMethod" : "BINARY",
+        "koreaderSyncPercentageTolerance" : 1.0E-15,
+        "koreaderSyncStrategyBackward" : "DISABLED",
+        "koreaderSyncStrategyForward" : "PROMPT",
+        "localSourcePath" : "",
+        "maxLogFileSize" : "10mb",
+        "maxLogFiles" : 31,
+        "maxLogFolderSize" : "100mb",
+        "maxSourcesInParallel" : 6,
+        "opdsCbzMimetype" : "MODERN",
+        "opdsChapterSortOrder" : "DESC",
+        "opdsEnablePageReadProgress" : true,
+        "opdsItemsPerPage" : 100,
+        "opdsMarkAsReadOnDownload" : false,
+        "opdsShowOnlyDownloadedChapters" : false,
+        "opdsShowOnlyUnreadChapters" : false,
+        "opdsUseBinaryFileSizes" : false,
+        "port" : 4567,
+        "socksProxyEnabled" : false,
+        "socksProxyHost" : "",
+        "socksProxyPassword" : "[REDACTED]",
+        "socksProxyPort" : "",
+        "socksProxyUsername" : "[REDACTED]",
+        "socksProxyVersion" : 5,
+        "systemTrayEnabled" : true,
+        "updateMangas" : false,
+        "useHikariConnectionPool" : true,
+        "webUIChannel" : "STABLE",
+        "webUIEnabled" : true,
+        "webUIFlavor" : "WEBUI",
+        "webUIInterface" : "BROWSER",
+        "webUISubpath" : "",
+        "webUIUpdateCheckInterval" : 23
+    }
+}
+
+21:14:21.810 [main] DEBUG suwayomi.tachidesk.server.ServerSetup -- Data Root directory is set to: /Users/tang/Library/Application Support/Tachidesk
+21:14:22.470 [main] INFO suwayomi.tachidesk.server.util.AppMutex -- Mutex status is clear, Resuming startup.
+21:14:22.633 [main] INFO com.zaxxer.hikari.HikariDataSource -- Suwayomi-DB-Pool - Starting...
+21:14:22.926 [main] INFO com.zaxxer.hikari.pool.HikariPool -- Suwayomi-DB-Pool - Added connection conn0: url=jdbc:h2:/Users/tang/Library/Application Support/Tachidesk/database user=
+21:14:22.928 [main] INFO com.zaxxer.hikari.HikariDataSource -- Suwayomi-DB-Pool - Start completed.
+21:14:22.979 [main] INFO suwayomi.tachidesk.server.database.DBManager -- Using H2 database version 1.4
+21:14:23.061 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migrations on database jdbc:h2:/Users/tang/Library/Application Support/Tachidesk/database
+21:14:23.149 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Empty database found, creating table for migrations
+21:14:23.221 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Database version before migrations: null
+21:14:23.222 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 1: Initial
+21:14:23.407 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 2: ChapterTableIndexRename
+21:14:23.414 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 3: DefaultCategory
+21:14:23.416 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 4: AnimeTablesBatch1
+21:14:23.427 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 5: AnimeTablesBatch2
+21:14:23.433 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 6: AnimeTablesBatch3
+21:14:23.444 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 7: ChapterIsDownloaded
+21:14:23.456 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 8: ChapterPageCount
+21:14:23.464 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 9: ChapterLastReadAt
+21:14:23.474 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 10: MangaAndChapterMeta
+21:14:23.494 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 11: SourceDropPartOfFactorySource
+21:14:23.500 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 12: SourceIsNsfw
+21:14:23.506 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 13: MangaRealUrl
+21:14:23.513 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 14: MangaRemoveLengthLimit
+21:14:23.539 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 15: SourceAndExtensionLangAddLengthLimit
+21:14:23.546 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 16: ChapterIndexRenameToSourceOrder
+21:14:23.548 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 17: ChapterFetchedAt
+21:14:23.554 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 18: MangaInLibraryAt
+21:14:23.559 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 19: RemoveAnime
+21:14:23.563 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 20: AddMangaLastFetchedAtColumns
+21:14:23.573 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 21: GlobalAndCategoryMeta
+21:14:23.583 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 22: MangaThumbnailLastFetched
+21:14:23.589 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 23: CategoryMetaRefFix
+21:14:23.599 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 24: MangaUpdateStrategy
+21:14:23.605 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 25: ChapterRealUrl
+21:14:23.610 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 26: CategoryIncludeInUpdate
+21:14:23.614 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 27: AddDefaultCategory
+21:14:23.616 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 28: AddCascade
+21:14:23.625 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 29: DropMangaDefaultCategory
+21:14:23.630 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 30: FixDateUpload
+21:14:23.634 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 31: AddExtensionRepo
+21:14:23.640 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 32: FixExtensionRepos
+21:14:23.642 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 33: TrackRecord
+21:14:23.649 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 34: CategoryIncludeInDownload
+21:14:23.653 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 35: TrackSearch
+21:14:23.659 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 36: SourceMeta
+21:14:23.664 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 37: RemoveTrackRecordsOfUnsupportedTrackers
+21:14:23.666 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 38: RemoveTrackRecordsOfUnsupportedTrackersII
+21:14:23.667 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 39: DeleteDuplicatedChapters
+21:14:23.671 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 40: AddUniqueConstraintToChapterTable
+21:14:23.673 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 41: FixDownloadedChaptersWithoutPageCount
+21:14:23.676 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 42: MangaRemoveLengthLimit_II
+21:14:23.685 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 43: PreventNegativeLastPageRead
+21:14:23.688 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 44: FixDownloadedChaptersWithoutPageCountII
+21:14:23.690 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 45: PreventDuplicatedChapterPages
+21:14:23.692 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 46: RenamePageImageUrlColumn
+21:14:23.693 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 47: ChapterScanlatorIncreaseLength
+21:14:23.700 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 48: AddTrackingColumns
+21:14:23.718 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 49: FixDuplicatedMetas
+21:14:23.723 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 50: FixHandlingOfTooLongPageImageUrls
+21:14:23.728 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 51: AddKoreaderHashToChapterTable
+21:14:23.733 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 52: RenameCategoryOrderColumn
+21:14:23.735 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 53: TrackersFixIds
+21:14:23.745 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running migration version 54: MovePostgresToSuwayomiSchema
+21:14:23.747 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Migrations finished successfully
+21:14:23.781 [main] INFO Migration -- Running migrations, previous version 0, target version 2
+21:14:23.785 [main] INFO Migration -- Running migration version 1: InitialMigration
+21:14:24.311 [main] INFO Migration -- Running migration version 2: FixGlobalUpdateScheduling
+21:14:24.345 [DefaultDispatcher-worker-1] INFO suwayomi.tachidesk.server.ServerSetup -- Socks Proxy changed - enabled=false address=: , username=[REDACTED], password=[REDACTED]
+21:14:25.371 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.manga.impl.backup.proto.ProtoBackupExport -- Creating automated backup...
+21:14:25.708 [DefaultDispatcher-worker-4] WARN suwayomi.tachidesk.server.util.WebInterfaceManager setupWebUI(flavor= WebUI, servedFlavor= WebUI) -- no webUI files found, starting download...
+21:14:26.579 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.WebInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Downloading WebUI zip from the Internet...
+downloadVersionZipFile(WebUI): Download progress: % 9821:14:27.620 [DefaultDispatcher-worker-9] INFO KCEF -- KCEF download progress: 0%
+100
+21:14:27.628 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.WebInterfaceManager -- downloadVersionZipFile(WebUI): Downloading WebUI Done.
+21:14:28.498 [DefaultDispatcher-worker-8] INFO KCEF -- KCEF download progress: 100%
+21:14:28.663 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.WebInterfaceManager isLocalWebUIValid(flavor= WebUI, path= /var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T//Suwayomi-WebUI-r2937) -- Verifying WebUI files...
+21:14:29.599 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.WebInterfaceManager isLocalWebUIValid(flavor= WebUI, path= /var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T//Suwayomi-WebUI-r2937) -- Validation succeeded - md5: local= f583fe4040259b42c9208e7d6f72203b; expected= f583fe4040259b42c9208e7d6f72203b
+21:14:29.921 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.WebInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Extracting WebUI zip...
+21:14:31.190 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.WebInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Extracting WebUI zip Done.
+21:14:31.930 [main] INFO io.javalin.Javalin -- Starting Javalin ...
+21:14:31.948 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.WebInterfaceManager -- Serving SPA files for WEBUI
+21:14:32.159 [main] INFO io.javalin.Javalin -- 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+21:14:32.159 [main] INFO io.javalin.Javalin -- Javalin started in 558ms \o/
+21:14:32.190 [main] INFO io.javalin.Javalin -- Static file handler added: StaticFileConfig(hostedPath=/, directory=/private/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/Tachidesk/webUI-serve, location=EXTERNAL, precompress=false, aliasCheck=org.eclipse.jetty.server.handler.ContextHandler$ApproveAliases@282aea3c, headers={Cache-Control=max-age=0}, mimeTypes={}, roles=[]). File system location: '/private/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/Tachidesk/webUI-serve'
+21:14:32.281 [main] INFO io.javalin.Javalin -- Listening on http://0.0.0.0:4567/
+21:14:32.311 [main] INFO io.javalin.Javalin -- You are running Javalin 6.7.0 (released June 22, 2025. Your Javalin version is 335 days old. Consider checking for a newer version.).
+21:14:33.489 [DefaultDispatcher-worker-2] ERROR suwayomi.tachidesk.server.ServerSetup -- Failed to create/remove SystemTray due to
+java.lang.LinkageError: loader 'bootstrap' attempted duplicate class definition for java.awt.TrayIcon. (java.awt.TrayIcon is in module java.desktop of loader 'bootstrap')
+        at com.sun.jna.Native.invokeVoid(Native Method)
+        at com.sun.jna.Function.invoke(Function.java:415)
+        at com.sun.jna.Function.invoke(Function.java:361)
+        at com.sun.jna.Library$Handler.invoke(Library.java:270)
+        at jdk.proxy2/jdk.proxy2.$Proxy24.JVM_DefineClass(Unknown Source)
+        at dorkbox.jna.ClassUtils.defineClass(ClassUtils.java:123)
+        at dorkbox.systemTray.util.SystemTrayFixesMacOS.fix(SystemTrayFixesMacOS.java:102)
+        at dorkbox.systemTray.SystemTray.get(SystemTray.java:748)
+        at suwayomi.tachidesk.server.util.SystemTray.create(SystemTray.kt:40)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invokeSuspend(ServerSetup.kt:431)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invoke(ServerSetup.kt)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invoke(ServerSetup.kt)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invokeSuspend(ServerConfig.kt:1074)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invoke(ServerConfig.kt)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invoke(ServerConfig.kt)
+        at kotlinx.coroutines.flow.FlowKt__TransformKt$onEach$$inlined$unsafeTransform$1$2.emit(Emitters.kt:50)
+        at kotlinx.coroutines.flow.SharedFlowImpl.collect$suspendImpl(SharedFlow.kt:397)
+        at kotlinx.coroutines.flow.SharedFlowImpl$collect$1.invokeSuspend(SharedFlow.kt)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:829)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)

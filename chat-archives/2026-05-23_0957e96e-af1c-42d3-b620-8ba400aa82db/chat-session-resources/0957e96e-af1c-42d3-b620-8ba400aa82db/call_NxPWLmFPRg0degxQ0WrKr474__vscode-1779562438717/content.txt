@@ -1,0 +1,236 @@
+21:14:21.810 [main] DEBUG suwayomi.tachidesk.server.ServerSetup -- Data Root dir
+ectory is set to: /Users/tang/Library/Application Support/Tachidesk
+21:14:22.470 [main] INFO suwayomi.tachidesk.server.util.AppMutex -- Mutex status
+ is clear, Resuming startup.
+21:14:22.633 [main] INFO com.zaxxer.hikari.HikariDataSource -- Suwayomi-DB-Pool 
+- Starting...
+21:14:22.926 [main] INFO com.zaxxer.hikari.pool.HikariPool -- Suwayomi-DB-Pool -
+ Added connection conn0: url=jdbc:h2:/Users/tang/Library/Application Support/Tac
+hidesk/database user=
+21:14:22.928 [main] INFO com.zaxxer.hikari.HikariDataSource -- Suwayomi-DB-Pool 
+- Start completed.
+21:14:22.979 [main] INFO suwayomi.tachidesk.server.database.DBManager -- Using H
+2 database version 1.4
+21:14:23.061 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igrations on database jdbc:h2:/Users/tang/Library/Application Support/Tachidesk/
+database
+21:14:23.149 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Empty dat
+abase found, creating table for migrations
+21:14:23.221 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Database 
+version before migrations: null
+21:14:23.222 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 1: Initial
+21:14:23.407 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 2: ChapterTableIndexRename
+21:14:23.414 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 3: DefaultCategory
+21:14:23.416 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 4: AnimeTablesBatch1
+21:14:23.427 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 5: AnimeTablesBatch2
+21:14:23.433 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 6: AnimeTablesBatch3
+21:14:23.444 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 7: ChapterIsDownloaded
+21:14:23.456 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 8: ChapterPageCount
+21:14:23.464 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 9: ChapterLastReadAt
+21:14:23.474 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 10: MangaAndChapterMeta
+21:14:23.494 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 11: SourceDropPartOfFactorySource
+21:14:23.500 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 12: SourceIsNsfw
+21:14:23.506 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 13: MangaRealUrl
+21:14:23.513 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 14: MangaRemoveLengthLimit
+21:14:23.539 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 15: SourceAndExtensionLangAddLengthLimit
+21:14:23.546 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 16: ChapterIndexRenameToSourceOrder
+21:14:23.548 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 17: ChapterFetchedAt
+21:14:23.554 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 18: MangaInLibraryAt
+21:14:23.559 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 19: RemoveAnime
+21:14:23.563 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 20: AddMangaLastFetchedAtColumns
+21:14:23.573 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 21: GlobalAndCategoryMeta
+21:14:23.583 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 22: MangaThumbnailLastFetched
+21:14:23.589 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 23: CategoryMetaRefFix
+21:14:23.599 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 24: MangaUpdateStrategy
+21:14:23.605 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 25: ChapterRealUrl
+21:14:23.610 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 26: CategoryIncludeInUpdate
+21:14:23.614 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 27: AddDefaultCategory
+21:14:23.616 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 28: AddCascade
+21:14:23.625 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 29: DropMangaDefaultCategory
+21:14:23.630 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 30: FixDateUpload
+21:14:23.634 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 31: AddExtensionRepo
+21:14:23.640 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 32: FixExtensionRepos
+21:14:23.642 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 33: TrackRecord
+21:14:23.649 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 34: CategoryIncludeInDownload
+21:14:23.653 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 35: TrackSearch
+21:14:23.659 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 36: SourceMeta
+21:14:23.664 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 37: RemoveTrackRecordsOfUnsupportedTrackers
+21:14:23.666 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 38: RemoveTrackRecordsOfUnsupportedTrackersII
+21:14:23.667 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 39: DeleteDuplicatedChapters
+21:14:23.671 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 40: AddUniqueConstraintToChapterTable
+21:14:23.673 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 41: FixDownloadedChaptersWithoutPageCount
+21:14:23.676 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 42: MangaRemoveLengthLimit_II
+21:14:23.685 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 43: PreventNegativeLastPageRead
+21:14:23.688 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 44: FixDownloadedChaptersWithoutPageCountII
+21:14:23.690 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 45: PreventDuplicatedChapterPages
+21:14:23.692 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 46: RenamePageImageUrlColumn
+21:14:23.693 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 47: ChapterScanlatorIncreaseLength
+21:14:23.700 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 48: AddTrackingColumns
+21:14:23.718 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 49: FixDuplicatedMetas
+21:14:23.723 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 50: FixHandlingOfTooLongPageImageUrls
+21:14:23.728 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 51: AddKoreaderHashToChapterTable
+21:14:23.733 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 52: RenameCategoryOrderColumn
+21:14:23.735 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 53: TrackersFixIds
+21:14:23.745 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Running m
+igration version 54: MovePostgresToSuwayomiSchema
+21:14:23.747 [main] INFO de.neonew.exposed.migrations.RunMigrations -- Migration
+s finished successfully
+21:14:23.781 [main] INFO Migration -- Running migrations, previous version 0, ta
+rget version 2
+21:14:23.785 [main] INFO Migration -- Running migration version 1: InitialMigrat
+ion
+21:14:24.311 [main] INFO Migration -- Running migration version 2: FixGlobalUpda
+teScheduling
+21:14:24.345 [DefaultDispatcher-worker-1] INFO suwayomi.tachidesk.server.ServerS
+etup -- Socks Proxy changed - enabled=false address=: , username=[REDACTED], pas
+sword=[REDACTED]
+21:14:25.371 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.manga.impl.bac
+kup.proto.ProtoBackupExport -- Creating automated backup...
+21:14:25.708 [DefaultDispatcher-worker-4] WARN suwayomi.tachidesk.server.util.We
+bInterfaceManager setupWebUI(flavor= WebUI, servedFlavor= WebUI) -- no webUI fil
+es found, starting download...
+21:14:26.579 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Downloading 
+WebUI zip from the Internet...
+downloadVersionZipFile(WebUI): Download progress: % 9821:14:27.620 [DefaultDispa
+tcher-worker-9] INFO KCEF -- KCEF download progress: 0%
+100
+21:14:27.628 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager -- downloadVersionZipFile(WebUI): Downloading WebUI Done.
+21:14:28.498 [DefaultDispatcher-worker-8] INFO KCEF -- KCEF download progress: 1
+00%
+21:14:28.663 [DefaultDispatcher-worker-4] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager isLocalWebUIValid(flavor= WebUI, path= /var/folders/mg/_gdgxbs
+n22xgqwyhh8fks7_00000gn/T//Suwayomi-WebUI-r2937) -- Verifying WebUI files...
+21:14:29.599 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager isLocalWebUIValid(flavor= WebUI, path= /var/folders/mg/_gdgxbs
+n22xgqwyhh8fks7_00000gn/T//Suwayomi-WebUI-r2937) -- Validation succeeded - md5: 
+local= f583fe4040259b42c9208e7d6f72203b; expected= f583fe4040259b42c9208e7d6f722
+03b
+21:14:29.921 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Extracting W
+ebUI zip...
+21:14:31.190 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager downloadVersion(version= r2937, flavor= WebUI) -- Extracting W
+ebUI zip Done.
+21:14:31.930 [main] INFO io.javalin.Javalin -- Starting Javalin ...
+21:14:31.948 [DefaultDispatcher-worker-7] INFO suwayomi.tachidesk.server.util.We
+bInterfaceManager -- Serving SPA files for WEBUI
+21:14:32.159 [main] INFO io.javalin.Javalin -- 
+       __                  ___           _____
+      / /___ __   ______ _/ (_)___      / ___/
+ __  / / __ `/ | / / __ `/ / / __ \    / __ \
+/ /_/ / /_/ /| |/ / /_/ / / / / / /   / /_/ /
+\____/\__,_/ |___/\__,_/_/_/_/ /_/    \____/
+
+       https://javalin.io/documentation
+
+21:14:32.159 [main] INFO io.javalin.Javalin -- Javalin started in 558ms \o/
+21:14:32.190 [main] INFO io.javalin.Javalin -- Static file handler added: Static
+FileConfig(hostedPath=/, directory=/private/var/folders/mg/_gdgxbsn22xgqwyhh8fks
+7_00000gn/T/Tachidesk/webUI-serve, location=EXTERNAL, precompress=false, aliasCh
+eck=org.eclipse.jetty.server.handler.ContextHandler$ApproveAliases@282aea3c, hea
+ders={Cache-Control=max-age=0}, mimeTypes={}, roles=[]). File system location: '
+/private/var/folders/mg/_gdgxbsn22xgqwyhh8fks7_00000gn/T/Tachidesk/webUI-serve'
+21:14:32.281 [main] INFO io.javalin.Javalin -- Listening on http://0.0.0.0:4567/
+21:14:32.311 [main] INFO io.javalin.Javalin -- You are running Javalin 6.7.0 (re
+leased June 22, 2025. Your Javalin version is 335 days old. Consider checking fo
+r a newer version.).
+21:14:33.489 [DefaultDispatcher-worker-2] ERROR suwayomi.tachidesk.server.Server
+Setup -- Failed to create/remove SystemTray due to
+java.lang.LinkageError: loader 'bootstrap' attempted duplicate class definition 
+for java.awt.TrayIcon. (java.awt.TrayIcon is in module java.desktop of loader 'b
+ootstrap')
+        at com.sun.jna.Native.invokeVoid(Native Method)
+        at com.sun.jna.Function.invoke(Function.java:415)
+        at com.sun.jna.Function.invoke(Function.java:361)
+        at com.sun.jna.Library$Handler.invoke(Library.java:270)
+        at jdk.proxy2/jdk.proxy2.$Proxy24.JVM_DefineClass(Unknown Source)
+        at dorkbox.jna.ClassUtils.defineClass(ClassUtils.java:123)
+        at dorkbox.systemTray.util.SystemTrayFixesMacOS.fix(SystemTrayFixesMacOS
+.java:102)
+        at dorkbox.systemTray.SystemTray.get(SystemTray.java:748)
+        at suwayomi.tachidesk.server.util.SystemTray.create(SystemTray.kt:40)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invokeSus
+pend(ServerSetup.kt:431)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invoke(Se
+rverSetup.kt)
+        at suwayomi.tachidesk.server.ServerSetupKt$applicationSetup$19.invoke(Se
+rverSetup.kt)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invokeSuspend(Se
+rverConfig.kt:1074)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invoke(ServerCon
+fig.kt)
+        at suwayomi.tachidesk.server.ServerConfig$subscribeTo$2.invoke(ServerCon
+fig.kt)
+        at kotlinx.coroutines.flow.FlowKt__TransformKt$onEach$$inlined$unsafeTra
+nsform$1$2.emit(Emitters.kt:50)
+        at kotlinx.coroutines.flow.SharedFlowImpl.collect$suspendImpl(SharedFlow
+.kt:397)
+        at kotlinx.coroutines.flow.SharedFlowImpl$collect$1.invokeSuspend(Shared
+Flow.kt)
+        at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(Contin
+uationImpl.kt:34)
+        at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineS
+cheduler.kt:586)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(C
+oroutineScheduler.kt:829)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(Cor
+outineScheduler.kt:717)
+        at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(Coroutine
+Scheduler.kt:704)
+tang@Tangs-MacBook-Pro Suwayomi-Server % 

@@ -1,0 +1,195 @@
+Output of terminal ca3a5efb-26df-471e-809a-8dcb2b6148c0:
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --console=plain -Dorg.gradle.jvmargs='-Xms512m -Xmx2048m -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8' :server:run
+Starting a Gradle Daemon (subsequent builds will be faster)
+Type-safe project accessors is an incubating feature.
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :AndroidCompat:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:Config:compileJava NO-SOURCE
+> Task :AndroidCompat:Config:processResources NO-SOURCE
+> Task :AndroidCompat:Config:classes UP-TO-DATE
+> Task :AndroidCompat:Config:jar UP-TO-DATE
+> Task :AndroidCompat:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:compileJava UP-TO-DATE
+> Task :AndroidCompat:processResources UP-TO-DATE
+> Task :AndroidCompat:classes UP-TO-DATE
+> Task :AndroidCompat:jar UP-TO-DATE
+> Task :server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:generateBuildConfigClasses
+> Task :server:generateJte UP-TO-DATE
+> Task :server:i18n:kmpPartiallyResolvedDependenciesChecker
+> Task :server:i18n:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:i18n:generateMRcommonMain UP-TO-DATE
+> Task :server:i18n:generateMRjvmMain UP-TO-DATE
+> Task :server:i18n:compileKotlinJvm UP-TO-DATE
+> Task :server:i18n:compileJvmMainJava NO-SOURCE
+> Task :server:i18n:jvmProcessResources UP-TO-DATE
+> Task :server:i18n:processJvmMainResources SKIPPED
+> Task :server:i18n:jvmMainClasses UP-TO-DATE
+> Task :server:i18n:jvmJar UP-TO-DATE
+> Task :server:server-config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config:compileKotlin UP-TO-DATE
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:processResources NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar UP-TO-DATE
+> Task :server:server-config-generate:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config-generate:compileKotlin UP-TO-DATE
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:processResources NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+> Task :server:server-config-generate:generateSettings UP-TO-DATE
+> Task :server:processResources UP-TO-DATE
+
+> Task :server:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/queries/InfoQuery.kt:20:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+
+> Task :server:compileJava NO-SOURCE
+> Task :server:classes UP-TO-DATE
+
+> Task :server:run
+21:14:20.897 [Thread-0] INFO suwayomi.tachidesk.server.ServerSetup -- Starting Android Main Loop
+21:14:21.798 [main] INFO suwayomi.tachidesk.server.ServerSetup -- Running Suwayomi-Server v2.1.2078
+21:14:21.809 [main] DEBUG suwayomi.tachidesk.server.ServerSetup -- Loaded config:
+{
+    "android" : {
+        "app" : {
+            "debug" : true,
+            "packageName" : "eu.kanade.tachiyomi"
+        },
+        "files" : {
+            "cacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/cache",
+            "codeCacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/code_cache",
+            "dataDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/data",
+            "databasesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/databases",
+            "downloadCacheDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/downloadCache",
+            "externalCacheDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/cache"
+            ],
+            "externalFilesDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/files"
+            ],
+            "externalMediaDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/media"
+            ],
+            "externalStorageDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata",
+            "filesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/files",
+            "noBackupFilesDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/no_backup",
+            "obbDirs" : [
+                "/Users/tang/Library/Application Support/Tachidesk/android-compat/extappdata/obb"
+            ],
+            "packageDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/android-compat/packages",
+            "prefsDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata/shared_prefs",
+            "rootDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat/appdata"
+        },
+        "system" : {
+            "isDebuggable" : true
+        }
+    },
+    "androidcompat" : {
+        "rootDir" : "/Users/tang/Library/Application Support/Tachidesk/android-compat"
+    },
+    "server" : {
+        "authMode" : "NONE",
+        "authPassword" : "[REDACTED]",
+        "authUsername" : "[REDACTED]",
+        "autoBackupIncludeCategories" : true,
+        "autoBackupIncludeChapters" : true,
+        "autoBackupIncludeClientData" : true,
+        "autoBackupIncludeHistory" : true,
+        "autoBackupIncludeManga" : true,
+        "autoBackupIncludeServerSettings" : true,
+        "autoBackupIncludeTracking" : true,
+        "autoDownloadIgnoreReUploads" : false,
+        "autoDownloadNewChapters" : false,
+        "autoDownloadNewChaptersLimit" : 0,
+        "backupInterval" : 1,
+        "backupPath" : "",
+        "backupTTL" : 14,
+        "backupTime" : "00:00",
+        "databasePassword" : "[REDACTED]",
+        "databaseType" : "H2",
+        "databaseUrl" : "postgresql://localhost:5432/suwayomi",
+        "databaseUsername" : "[REDACTED]",
+        "debugLogsEnabled" : false,
+        "downloadAsCbz" : false,
+        "downloadsPath" : "",
+        "electronPath" : "",
+        "excludeCompleted" : true,
+        "excludeEntryWithUnreadChapters" : true,
+        "excludeNotStarted" : true,
+        "excludeUnreadChapters" : true,
+        "extensionRepos" : "[REDACTED]",
+        "flareSolverrAsResponseFallback" : false,
+        "flareSolverrEnabled" : false,
+        "flareSolverrSessionName" : "suwayomi",
+        "flareSolverrSessionTtl" : 15,
+        "flareSolverrTimeout" : 60,
+        "flareSolverrUrl" : "http://localhost:8191",
+        "globalUpdateInterval" : 12,
+        "initialOpenInBrowserEnabled" : true,
+        "ip" : "0.0.0.0",
+        "jwtAudience" : "suwayomi-server-api",
+        "jwtRefreshExpiry" : "60d",
+        "jwtTokenExpiry" : "5m",
+        "koreaderSyncChecksumMethod" : "BINARY",
+        "koreaderSyncPercentageTolerance" : 1.0E-15,
+        "koreaderSyncStrategyBackward" : "DISABLED",
+        "koreaderSyncStrategyForward" : "PROMPT",
+        "localSourcePath" : "",
+        "maxLogFileSize" : "10mb",
+        "maxLogFiles" : 31,
+        "maxLogFolderSize" : "100mb",
+        "maxSourcesInParallel" : 6,
+        "opdsCbzMimetype" : "MODERN",
+        "opdsChapterSortOrder" : "DESC",
+        "opdsEnablePageReadProgress" : true,
+        "opdsItemsPerPage" : 100,
+        "opdsMarkAsReadOnDownload" : false,
+        "opdsShowOnlyDownloadedChapters" : false,
+        "opdsShowOnlyUnreadChapters" : false,
+        "opdsUseBinaryFileSizes" : false,
+        "port" : 4567,
+        "socksProxyEnabled" : false,
+        "socksProxyHost" : "",
+        "socksProxyPassword" : "[REDACTED]",
+        "socksProxyPort" : "",
+        "socksProxyUsername" : "[REDACTED]",
+        "socksProxyVersion" : 5,
+        "systemTrayEnabled" : true,
+        "updateMangas" : false,
+        "useHikariConnectionPool" : true,
+        "webUIChannel" : "STABLE",
+        "webUIEnabled" : true,
+        "webUIFlavor" : "WEBUI",
+        "webUIInterface" : "BROWSER",
+        "webUISubpath" : "",
+        "webUIUpdateCheckInterval" : 23
+    }
+}
+
+21:14:21.810 [main] DEBUG suwayomi.tachidesk.server.ServerSetup -- Data Root directory is set to: /Users/tang/Library/Application Support/Tachidesk
+21:14:22.470 [main] INFO suwayomi.tachidesk.server.util.AppMutex -- Mutex status is clear, Resuming startup.
+21:14:22.633 [main] INFO com.zaxxer.hikari.HikariDataSource -- Suwayomi-DB-Pool - Starting...

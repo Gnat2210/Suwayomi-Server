@@ -1,0 +1,3 @@
+- Local build stability: use Gradle JVM args `-Xms512m -Xmx2048m -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8` to avoid daemon disappearance during `:server:compileKotlin`.
+- `:server:test` currently fails at compile time in `server/src/test/kotlin/suwayomi/tachidesk/test/ApplicationTest.kt` (`databaseUp(db)` now mismatches `databaseUp()` signature).
+- `:server:run` starts Javalin on `http://0.0.0.0:4567/` and serves WEBUI, but process then crashes due KCEF/JCEF SIGSEGV on macOS in this environment.

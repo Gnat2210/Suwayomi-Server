@@ -1,0 +1,176 @@
+Output of terminal 023a75bc-9a9b-45d8-8bd5-bbb13afe37de:
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --no-daemon --console=plain :server:downloadWebUI :server:shadowJar :server:test
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Type-safe project accessors is an incubating feature.
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :AndroidCompat:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+
+> Task :server:downloadWebUI
+Download https://github.com/Suwayomi/Suwayomi-WebUI-preview/releases/download/r2643/Suwayomi-WebUI-r2643.zip
+
+> Task :AndroidCompat:Config:processResources NO-SOURCE
+> Task :AndroidCompat:processResources
+> Task :server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:generateBuildConfigClasses
+> Task :server:i18n:kmpPartiallyResolvedDependenciesChecker
+> Task :server:i18n:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:generateJte
+> Task :server:i18n:generateMRcommonMain
+> Task :server:i18n:generateMRjvmMain
+> Task :server:i18n:jvmProcessResources
+> Task :server:i18n:processJvmMainResources SKIPPED
+> Task :server:server-config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config:processResources NO-SOURCE
+> Task :server:server-config-generate:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config-generate:processResources NO-SOURCE
+> Task :server:generateTestBuildConfigClasses SKIPPED
+
+> Task :server:i18n:compileKotlinJvm
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:9:8 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:10:17 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:260:17 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:12:8 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:17:10 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:392:10 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+
+> Task :server:i18n:compileJvmMainJava NO-SOURCE
+> Task :server:i18n:jvmMainClasses
+
+> Task :AndroidCompat:Config:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+
+> Task :server:i18n:jvmJar
+> Task :AndroidCompat:Config:compileJava NO-SOURCE
+> Task :AndroidCompat:Config:classes UP-TO-DATE
+> Task :AndroidCompat:Config:jar
+
+> Task :AndroidCompat:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:263:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:271:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:970:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:972:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:235:32 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:243:32 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:269:28 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:444:43 Unnecessary safe call on a non-null receiver of type 'CefRequest'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:498:30 'constructor(): RenderProcessGoneDetail' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:843:47 'interface PictureListener : Any' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:865:30 Unchecked cast of 'KClass<out Any>' to 'KClass<Any>'.
+
+> Task :AndroidCompat:compileJava
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/sqlite/SQLiteDatabase.java:242: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/sqlite/SQLiteDatabase.java:246: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/content/pm/PackageManager.java:3369: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public abstract int getInstantAppCookieMaxSize();
+                        ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/content/Intent.java:4193: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET = 0x00080000;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/os/MessageQueue.java:354: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/os/MessageQueue.java:358: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/AbstractCursor.java:385: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:256: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_OFF = 0;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:268: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_AUTO = 1;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:277: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_ON = 2;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1590: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void setForceDark(@ForceDark int forceDark) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1602: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public @ForceDark int getForceDark() {
+                          ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1223: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static NetworkCapabilities networkCapabilitiesForType(int type) {
+                                      ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1848: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void reportInetCondition(int networkType, int percentage) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/NetworkInfo.java:424: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String getReason() {
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 warnings
+
+> Task :AndroidCompat:classes
+> Task :AndroidCompat:jar
+
+> Task :server:server-config:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config/src/main/kotlin/suwayomi/tachidesk/server/ServerConfig.kt:35:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar
+
+> Task :server:server-config-generate:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config-generate/src/main/kotlin/suwayomi/tachidesk/server/settings/generation/SettingsGenerator.kt:38:30 Cannot access 'SystemPropertyOverridableConfigModule' which is a supertype of 'ServerConfig'. This may be forbidden soon. Check the module classpath for missing or conflicting dependencies.
+
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+
+> Task :server:server-config-generate:generateSettings
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+
+> Task :server:processResources
+> Task :server:processTestResources
+> Task :server:compileKotlin

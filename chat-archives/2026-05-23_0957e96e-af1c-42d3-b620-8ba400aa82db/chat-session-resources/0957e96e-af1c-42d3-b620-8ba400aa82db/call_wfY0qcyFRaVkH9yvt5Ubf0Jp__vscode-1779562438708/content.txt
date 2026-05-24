@@ -1,0 +1,491 @@
+Output of terminal f2c741cc-b4e9-4f0a-9263-7c55801b847b:
+
+
+[... PREVIOUS OUTPUT TRUNCATED ...]
+
+[DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-05-23T20:59:10.386+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-05-23T20:59:10.390+0200 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-05-23T20:59:10.391+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-05-23T20:59:10.391+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-05-23T20:59:10.393+0200 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=89da9d1d-8138-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi-Server}. Dispatching build started information...
+2026-05-23T20:59:10.393+0200 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 36: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@58305cf0
+2026-05-23T20:59:10.395+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, MallocNanoZone, ZDOTDIR, GIT_MERGE_AUTOEDIT, PYTHON_BASIC_REPL, GIT_PAGER, JAVA_HOME, GIT_EDITOR, TERM, LANG, VSCODE_GIT_IPC_HANDLE, VSCODE_PYTHON_AUTOACTIVATE_GUARD, COMMAND_MODE, VSCODE_GIT_ASKPASS_MAIN, VSCODE_INJECTION, COLORTERM, PYTHONSTARTUP, VSCODE_PROFILE_INITIALIZED, VSCODE_GIT_ASKPASS_EXTRA_ARGS, LOGNAME, VSCODE_GIT_ASKPASS_NODE, TERM_PROGRAM_VERSION, XPC_SERVICE_NAME, PWD, GIT_ASKPASS, __CFBundleIdentifier, COPILOT_AGENT, SHELL, TERM_PROGRAM, USER_ZDOTDIR, USER, TMPDIR, SSH_AUTH_SOCK, XPC_FLAGS, VSCODE_LOGIN_INITIALIZED, __CF_USER_TEXT_ENCODING, SHLVL, HOME]
+2026-05-23T20:59:10.402+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-05-23T20:59:10.402+0200 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 80534). The daemon log file: /Users/tang/.gradle/daemon/9.3.1/daemon-80534.out.log
+2026-05-23T20:59:10.406+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=89da9d1d-8138-4d10-bc6b-890583c98ae4, currentDir=/Users/tang/Documents/GitHub/Suwayomi-Server}
+2026-05-23T20:59:10.406+0200 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build 
+2026-05-23T20:59:10.408+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy
+2026-05-23T20:59:10.409+0200 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-05-23T20:59:10.417+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-05-23T20:59:10.417+0200 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=dd41f66f-9fa9-4987-ab77-11e4ae10d680,javaHome=/Users/tang/.jdks/temurin-21/Contents/Home,javaVersion=21,javaVendor=Eclipse Adoptium,daemonRegistryDir=/Users/tang/.gradle/daemon,pid=80534,idleTimeout=120000,priority=NORMAL,applyInstrumentationAgent=true,nativeServicesMode=ENABLED,daemonOpts=-XX:MaxMetaspaceSize=384m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+Type-safe project accessors is an incubating feature.
+Download https://github.com/Suwayomi/Suwayomi-WebUI-preview/releases/download/r2643/Suwayomi-WebUI-r2643.zip
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:9:8 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:10:17 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/commonMain/src/suwayomi/tachidesk/i18n/MR.kt:260:17 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:12:8 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:17:10 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/i18n/build/generated/moko-resources/jvmMain/src/suwayomi/tachidesk/i18n/MR.kt:392:10 'expect'/'actual' classes (including interfaces, objects, annotations, enums, and 'actual' typealiases) are in Beta. Consider using the '-Xexpect-actual-classes' flag to suppress this warning. Also see: https://youtrack.jetbrains.com/issue/KT-61573
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:263:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:271:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:970:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/db/ScrollableResultSet.kt:972:18 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:235:32 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:243:32 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:269:28 'fun onReceivedError(view: WebView!, errorCode: Int, description: String!, failingUrl: String!): Unit' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:444:43 Unnecessary safe call on a non-null receiver of type 'CefRequest'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:498:30 'constructor(): RenderProcessGoneDetail' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:843:47 'interface PictureListener : Any' is deprecated. Deprecated in Java.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/xyz/nulldev/androidcompat/webkit/KcefWebViewProvider.kt:865:30 Unchecked cast of 'KClass<out Any>' to 'KClass<Any>'.
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/sqlite/SQLiteDatabase.java:242: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/sqlite/SQLiteDatabase.java:246: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/content/pm/PackageManager.java:3369: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public abstract int getInstantAppCookieMaxSize();
+                        ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/content/Intent.java:4193: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET = 0x00080000;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/os/MessageQueue.java:354: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() throws Throwable {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/os/MessageQueue.java:358: warning: [removal] finalize() in Object has been deprecated and marked for removal
+            super.finalize();
+                 ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/database/AbstractCursor.java:385: warning: [removal] finalize() in Object has been deprecated and marked for removal
+    protected void finalize() {
+                   ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:256: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_OFF = 0;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:268: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_AUTO = 1;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:277: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static final int FORCE_DARK_ON = 2;
+                            ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1590: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void setForceDark(@ForceDark int forceDark) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/webkit/WebSettings.java:1602: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public @ForceDark int getForceDark() {
+                          ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1223: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public static NetworkCapabilities networkCapabilitiesForType(int type) {
+                                      ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/ConnectivityManager.java:1848: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public void reportInetCondition(int networkType, int percentage) {
+                ^
+/Users/tang/Documents/GitHub/Suwayomi-Server/AndroidCompat/src/main/java/android/net/NetworkInfo.java:424: warning: [dep-ann] deprecated item is not annotated with @Deprecated
+    public String getReason() {
+                  ^
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+15 warnings
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config/src/main/kotlin/suwayomi/tachidesk/server/ServerConfig.kt:35:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/server-config-generate/src/main/kotlin/suwayomi/tachidesk/server/settings/generation/SettingsGenerator.kt:38:30 Cannot access 'SystemPropertyOverridableConfigModule' which is a supertype of 'ServerConfig'. This may be forbidden soon. Check the module classpath for missing or conflicting dependencies.
+Generating settings files from ServerConfig registry...
+ - Total: 87
+ - Deprecated: 10
+ - Require restart: 2
+Settings config file generated successfully! Total settings: 77
+- Main config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/resources/server-reference.conf
+- Test config: /Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/test/resources/server-reference.conf
+Graphql type generated successfully! Total settings: 87
+BackupServerSettingsGenerator generated successfully! Total settings: 87
+BackupServerSettings generated successfully! Total settings: 87
+✅ Settings files generation completed successfully!
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+tang@Tangs-MacBook-Pro Suwayomi-Server %  export JAVA_HOME="$HOME/.jdks/temurin-21/Contents/Home" && export PATH="$JAVA_HOME/bin:$PATH" && ./gradlew --no-daemon --console=plain -Dorg.gradle.jvmargs='-Xms512m -Xmx2048m -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8' :server:compileKotlin
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Type-safe project accessors is an incubating feature.
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :buildSrc:compileKotlin UP-TO-DATE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors UP-TO-DATE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :AndroidCompat:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :AndroidCompat:Config:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:Config:compileJava NO-SOURCE
+> Task :AndroidCompat:Config:processResources NO-SOURCE
+> Task :AndroidCompat:Config:classes UP-TO-DATE
+> Task :AndroidCompat:Config:jar UP-TO-DATE
+> Task :AndroidCompat:compileKotlin UP-TO-DATE
+> Task :AndroidCompat:compileJava UP-TO-DATE
+> Task :AndroidCompat:processResources UP-TO-DATE
+> Task :AndroidCompat:classes UP-TO-DATE
+> Task :AndroidCompat:jar UP-TO-DATE
+> Task :server:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:generateBuildConfigClasses
+> Task :server:generateJte UP-TO-DATE
+> Task :server:i18n:kmpPartiallyResolvedDependenciesChecker
+> Task :server:i18n:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:i18n:generateMRcommonMain UP-TO-DATE
+> Task :server:i18n:generateMRjvmMain UP-TO-DATE
+> Task :server:i18n:compileKotlinJvm UP-TO-DATE
+> Task :server:i18n:compileJvmMainJava NO-SOURCE
+> Task :server:i18n:jvmProcessResources UP-TO-DATE
+> Task :server:i18n:processJvmMainResources SKIPPED
+> Task :server:i18n:jvmMainClasses UP-TO-DATE
+> Task :server:i18n:jvmJar UP-TO-DATE
+> Task :server:server-config:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config:compileKotlin UP-TO-DATE
+> Task :server:server-config:compileJava NO-SOURCE
+> Task :server:server-config:processResources NO-SOURCE
+> Task :server:server-config:classes UP-TO-DATE
+> Task :server:server-config:jar UP-TO-DATE
+> Task :server:server-config-generate:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :server:server-config-generate:compileKotlin UP-TO-DATE
+> Task :server:server-config-generate:compileJava NO-SOURCE
+> Task :server:server-config-generate:processResources NO-SOURCE
+> Task :server:server-config-generate:classes UP-TO-DATE
+> Task :server:server-config-generate:generateSettings UP-TO-DATE
+> Task :server:compileKotlin
+w: Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:28:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:137:31 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:167:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:169:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:176:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:192:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:200:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:202:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:206:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:243:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:245:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:247:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:249:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:252:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:253:40 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:283:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:285:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:292:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:308:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:316:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:318:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:322:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:359:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:361:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:363:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:365:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:368:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:369:40 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:406:16 'val autoDownloadAheadLimit: MutableStateFlow<Int>' is deprecated. Will get removed.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:421:16 'val basicAuthEnabled: MutableStateFlow<Boolean>' is deprecated. Will get removed.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:428:16 'val basicAuthUsername: MutableStateFlow<String>' is deprecated. Removed - prefer authUsername.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:429:16 'val basicAuthPassword: MutableStateFlow<String>' is deprecated. Removed - prefer authPassword.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:432:16 'val gqlDebugLogsEnabled: MutableStateFlow<Boolean>' is deprecated. Removed - does not do anything.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:468:16 'val koreaderSyncServerUrl: MutableStateFlow<String>' is deprecated. Moved to preference store. User is supposed to use a login/logout mutation.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:469:16 'val koreaderSyncUsername: MutableStateFlow<String>' is deprecated. Moved to preference store. User is supposed to use a login/logout mutation.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:470:16 'val koreaderSyncUserkey: MutableStateFlow<String>' is deprecated. Moved to preference store. User is supposed to use a login/logout mutation.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:471:16 'val koreaderSyncDeviceId: MutableStateFlow<String>' is deprecated. Moved to preference store. Is supposed to be random and gets auto generated.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/graphql/types/SettingsType.kt:473:16 'val koreaderSyncStrategy: MutableStateFlow<KoreaderSyncLegacyStrategy>' is deprecated. Use koreaderSyncStrategyForward and koreaderSyncStrategyBackward instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/handlers/BackupSettingsHandler.kt:27:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/handlers/BackupSettingsHandler.kt:64:152 Unchecked cast of 'Any' to 'List<BackupSettingsDownloadConversionType>'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/handlers/BackupSettingsHandler.kt:65:143 Unchecked cast of 'Any' to 'List<BackupSettingsDownloadConversionType>'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/handlers/BackupSettingsHandler.kt:146:125 'var basicAuthEnabled: Boolean?' is deprecated. Removed - prefer authMode.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/models/BackupServerSettings.kt:23:8 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/build/generated/src/main/kotlin/suwayomi/tachidesk/manga/impl/backup/proto/models/BackupServerSettings.kt:103:57 'enum class KoreaderSyncLegacyStrategy : Enum<KoreaderSyncLegacyStrategy>' is deprecated. Used for migration purposes only. Use KoreaderSyncConflictStrategy instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/eu/kanade/tachiyomi/network/OkHttpExtensions.kt:143:1 Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/eu/kanade/tachiyomi/network/OkHttpExtensions.kt:147:1 Experimental context receivers are superseded by context parameters.
+Replace the '-Xcontext-receivers' compiler argument with '-Xcontext-parameters' and migrate to the new syntax.
+
+See the context parameters proposal for more details: https://kotl.in/context-parameters
+This warning will become an error in future releases.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:57:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:59:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:61:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:63:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:65:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/BackupMutation.kt:67:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/ChapterMutation.kt:114:13 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:115:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:184:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:252:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:254:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:256:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/TrackMutation.kt:258:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/UpdateMutation.kt:77:50 'val status: Flow<UpdateStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/mutations/UpdateMutation.kt:109:50 'val status: Flow<UpdateStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/queries/InfoQuery.kt:20:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/queries/UpdateQuery.kt:20:34 'val status: Flow<UpdateStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/server/primitives/NodeList.kt:22:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/server/primitives/NodeList.kt:24:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/server/primitives/NodeList.kt:26:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/server/primitives/NodeList.kt:28:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/subscriptions/DownloadSubscription.kt:23:25 'val status: Flow<DownloadStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/subscriptions/DownloadSubscription.kt:28:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/subscriptions/UpdateSubscription.kt:27:17 'val status: Flow<UpdateStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/subscriptions/UpdateSubscription.kt:32:9 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/types/DownloadType.kt:45:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/types/DownloadType.kt:47:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/types/UpdateType.kt:183:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/graphql/types/UpdateType.kt:186:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to property.
+- To opt in to applying to both value parameter and property, add '-Xannotation-default-target=param-property' to your compiler arguments.
+- To keep applying to the value parameter only, use the '@param:' annotation target.
+
+See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/controller/MangaController.kt:394:21 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/controller/MangaController.kt:494:33 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/download/DownloadManager.kt:147:18 'val statusFlow: MutableSharedFlow<DownloadStatus>' is deprecated. Replaced with updatesFlow.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/download/DownloadManager.kt:200:17 'val statusFlow: MutableSharedFlow<DownloadStatus>' is deprecated. Replaced with updatesFlow.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/sync/KoreaderSyncService.kt:462:54 Unnecessary safe call on a non-null receiver of type 'String'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/track/tracker/model/TrackConvertor.kt:111:45 Redundant call of conversion method.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/track/tracker/model/TrackConvertor.kt:114:23 Redundant call of conversion method.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/update/Updater.kt:61:27 'val statusFlow: MutableSharedFlow<UpdateStatus>' is deprecated. Replaced with updatesFlow.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/update/Updater.kt:259:13 'val statusFlow: MutableSharedFlow<UpdateStatus>' is deprecated. Replaced with updatesFlow.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/manga/impl/update/UpdaterSocket.kt:64:17 'val status: Flow<UpdateStatus>' is deprecated. Replaced with updates.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/opds/impl/OpdsEntryBuilder.kt:251:70 Unnecessary non-null assertion (!!) on a non-null receiver of type 'KoreaderSyncService.SyncResult'.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:27:61 This class is not recommended for use in Kotlin. Use 'kotlin.String' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:28:59 This class is not recommended for use in Kotlin. Use 'kotlin.Int' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:29:57 This class is not recommended for use in Kotlin. Use 'kotlin.Long' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:30:63 This class is not recommended for use in Kotlin. Use 'kotlin.Boolean' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:31:59 This class is not recommended for use in Kotlin. Use 'kotlin.Float' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:32:61 This class is not recommended for use in Kotlin. Use 'kotlin.Double' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:45:57 This class is not recommended for use in Kotlin. Use 'kotlin.String' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:49:55 This class is not recommended for use in Kotlin. Use 'kotlin.Int' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:53:53 This class is not recommended for use in Kotlin. Use 'kotlin.Long' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:57:59 This class is not recommended for use in Kotlin. Use 'kotlin.Boolean' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:61:55 This class is not recommended for use in Kotlin. Use 'kotlin.Float' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:65:57 This class is not recommended for use in Kotlin. Use 'kotlin.Double' instead.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/DocumentationDsl.kt:74:21 'when' is exhaustive so 'else' is redundant here.
+w: file:///Users/tang/Documents/GitHub/Suwayomi-Server/server/src/main/kotlin/suwayomi/tachidesk/server/util/WebInterfaceManager.kt:183:53 'constructor(): ContextHandler.ApproveAliases' is deprecated. Deprecated in Java.
+
+[Incubating] Problems report is available at: file:///Users/tang/Documents/GitHub/Suwayomi-Server/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 25s
+22 actionable tasks: 3 executed, 19 up-to-date
