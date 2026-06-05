@@ -72,7 +72,7 @@ class TestExtensionCompatibility {
                     }
                 }
             }
-            sources = getSourceList().map { getCatalogueSourceOrNull(it.id.toLong())!! as HttpSource }
+            sources = getSourceList().mapNotNull { getCatalogueSourceOrNull(it.id.toLong()) as? HttpSource }
         }
         setLoggingEnabled(true)
         File("$BASE_PATH/sources.txt").writeText(sources.joinToString("\n") { "${it.name} - ${it.lang.uppercase()} - ${it.id}" })

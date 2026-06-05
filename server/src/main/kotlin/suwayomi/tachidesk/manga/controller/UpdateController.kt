@@ -58,7 +58,10 @@ object UpdateController {
      * Class made for handling return type in the documentation for [recentChapters],
      * since OpenApi cannot handle runtime generics.
      */
-    private class PagedMangaChapterListDataClass : PaginatedList<MangaChapterDataClass>(emptyList(), false)
+    private data class PagedMangaChapterListDataClass(
+        val page: List<MangaChapterDataClass>,
+        val hasNextPage: Boolean,
+    )
 
     val categoryUpdate =
         handler(

@@ -34,6 +34,7 @@ import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import org.bouncycastle.jce.provider.BouncyCastleProvider
 import org.cef.network.CefCookieManager
+import org.koin.core.context.GlobalContext
 import org.koin.core.context.startKoin
 import org.koin.core.module.Module
 import org.koin.dsl.module
@@ -78,6 +79,17 @@ import kotlin.io.path.div
 import kotlin.math.roundToInt
 
 private val logger = KotlinLogging.logger {}
+
+private fun isTestEnvironment(): Boolean = System.getProperty("org.gradle.test.worker") != null
+
+private var isKcefInitialized = false
+
+private fun shouldStartKcef(): Boolean {
+    val osName = System.getProperty("os.name")?.lowercase() ?: return true
+    val osArch = System.getProperty("os.arch")?.lowercase() ?: return true
+
+    return !(osName.contains("mac") && osArch in setOf("aarch64", "arm64"))
+}
 
 class ApplicationDirs(
     val dataRoot: String = ApplicationRootDir,
@@ -231,8 +243,9 @@ fun applicationSetup() {
         KotlinLogging.logger {}.error(throwable) { "unhandled exception" }
     }
 
-    val mainLoop = LooperThread()
-    mainLoop.start()
+    if (Looper.getMainLooper() == null) {
+        LooperThread().start()
+    }
 
     // register Tachidesk's config which is dubbed "ServerConfig"
     ConfigTypeRegistration.registerCustomTypes()
@@ -302,40 +315,42 @@ fun applicationSetup() {
 
     // initialize Koin modules
     val app = App()
-    startKoin {
-        modules(
-            createAppModule(app),
-            androidCompatModule(),
-            configManagerModule(),
-            serverModule(applicationDirs),
-            module {
-                single<KcefWebViewProvider.InitBrowserHandler> {
-                    object : KcefWebViewProvider.InitBrowserHandler {
-                        override fun init(provider: KcefWebViewProvider) {
-                            val networkHelper = Injekt.get<NetworkHelper>()
-                            val logger = KotlinLogging.logger {}
-                            logger.info { "Start loading cookies" }
-                            CefCookieManager.getGlobalManager().apply {
-                                val cookies = networkHelper.cookieStore.getStoredCookies()
-                                for (cookie in cookies) {
-                                    try {
-                                        if (!setCookie(
-                                                "https://" + cookie.domain,
-                                                cookie.toCefCookie(),
-                                            )
-                                        ) {
-                                            throw Exception()
+    if (GlobalContext.getOrNull() == null) {
+        startKoin {
+            modules(
+                createAppModule(app),
+                androidCompatModule(),
+                configManagerModule(),
+                serverModule(applicationDirs),
+                module {
+                    single<KcefWebViewProvider.InitBrowserHandler> {
+                        object : KcefWebViewProvider.InitBrowserHandler {
+                            override fun init(provider: KcefWebViewProvider) {
+                                val networkHelper = Injekt.get<NetworkHelper>()
+                                val logger = KotlinLogging.logger {}
+                                logger.info { "Start loading cookies" }
+                                CefCookieManager.getGlobalManager().apply {
+                                    val cookies = networkHelper.cookieStore.getStoredCookies()
+                                    for (cookie in cookies) {
+                                        try {
+                                            if (!setCookie(
+                                                    "https://" + cookie.domain,
+                                                    cookie.toCefCookie(),
+                                                )
+                                            ) {
+                                                throw Exception()
+                                            }
+                                        } catch (e: Exception) {
+                                            logger.warn(e) { "Loading cookie ${cookie.name} failed" }
                                         }
-                                    } catch (e: Exception) {
-                                        logger.warn(e) { "Loading cookie ${cookie.name} failed" }
                                     }
                                 }
                             }
                         }
                     }
-                }
-            },
-        )
+                },
+            )
+        }
     }
 
     // Make sure only one instance of the app is running
@@ -423,22 +438,24 @@ fun applicationSetup() {
     )
 
     // create system tray
-    serverConfig.subscribeTo(
-        serverConfig.systemTrayEnabled,
-        { systemTrayEnabled ->
-            try {
-                if (systemTrayEnabled) {
-                    SystemTray.create()
-                } else {
-                    SystemTray.remove()
+    if (!isTestEnvironment()) {
+        serverConfig.subscribeTo(
+            serverConfig.systemTrayEnabled,
+            { systemTrayEnabled ->
+                try {
+                    if (systemTrayEnabled) {
+                        SystemTray.create()
+                    } else {
+                        SystemTray.remove()
+                    }
+                } catch (e: Throwable) {
+                    // cover both java.lang.Exception and java.lang.Error
+                    logger.error(e) { "Failed to create/remove SystemTray due to" }
                 }
-            } catch (e: Throwable) {
-                // cover both java.lang.Exception and java.lang.Error
-                logger.error(e) { "Failed to create/remove SystemTray due to" }
-            }
-        },
-        ignoreInitialValue = false,
-    )
+            },
+            ignoreInitialValue = false,
+        )
+    }
 
     runMigrations(applicationDirs)
 
@@ -511,56 +528,63 @@ fun applicationSetup() {
     // start DownloadManager and restore + resume downloads
     DownloadManager.restoreAndResumeDownloads()
 
-    GlobalScope.launch {
-        val logger = KotlinLogging.logger("KCEF")
-        KCEF.init(
-            builder = {
-                progress {
-                    var lastNum = -1
-                    onDownloading {
-                        val num = it.roundToInt()
-                        if (num > lastNum) {
-                            lastNum = num
-                            logger.info { "KCEF download progress: $num%" }
+    if (!isTestEnvironment() && shouldStartKcef()) {
+        GlobalScope.launch {
+            val logger = KotlinLogging.logger("KCEF")
+            isKcefInitialized = true
+            KCEF.init(
+                builder = {
+                    progress {
+                        var lastNum = -1
+                        onDownloading {
+                            val num = it.roundToInt()
+                            if (num > lastNum) {
+                                lastNum = num
+                                logger.info { "KCEF download progress: $num%" }
+                            }
                         }
                     }
-                }
-                download { github() }
-                settings {
-                    windowlessRenderingEnabled = true
-                    cachePath = (Path(applicationDirs.dataRoot) / "cache/kcef").toString()
-                    logSeverity = if (serverConfig.debugLogsEnabled.value) LogSeverity.Verbose else LogSeverity.Default
-                }
-                appHandler(
-                    KCEF.AppHandler(
-                        arrayOf(
-                            "--disable-gpu",
-                            // #1486 needed to be able to render without a window
-                            "--off-screen-rendering-enabled",
-                            // #1489 since /dev/shm is restricted in docker (OOM)
-                            "--disable-dev-shm-usage",
-                            // #1723 support Widevine (incomplete)
-                            "--enable-widevine-cdm",
-                            // #1736 JCEF does implement stack guards properly
-                            "--change-stack-guard-on-fork=disable",
+                    download { github() }
+                    settings {
+                        windowlessRenderingEnabled = true
+                        cachePath = (Path(applicationDirs.dataRoot) / "cache/kcef").toString()
+                        logSeverity = if (serverConfig.debugLogsEnabled.value) LogSeverity.Verbose else LogSeverity.Default
+                    }
+                    appHandler(
+                        KCEF.AppHandler(
+                            arrayOf(
+                                "--disable-gpu",
+                                // #1486 needed to be able to render without a window
+                                "--off-screen-rendering-enabled",
+                                // #1489 since /dev/shm is restricted in docker (OOM)
+                                "--disable-dev-shm-usage",
+                                // #1723 support Widevine (incomplete)
+                                "--enable-widevine-cdm",
+                                // #1736 JCEF does implement stack guards properly
+                                "--change-stack-guard-on-fork=disable",
+                            ),
                         ),
-                    ),
-                )
+                    )
 
-                val kcefDir = Path(applicationDirs.dataRoot) / "bin/kcef"
-                kcefDir.createDirectories()
-                installDir(kcefDir.toFile())
-            },
-            onError = { it?.printStackTrace() },
-        )
+                    val kcefDir = Path(applicationDirs.dataRoot) / "bin/kcef"
+                    kcefDir.createDirectories()
+                    installDir(kcefDir.toFile())
+                },
+                onError = { it?.printStackTrace() },
+            )
+        }
+    } else if (!isTestEnvironment()) {
+        logger.info { "Skipping KCEF initialization on this platform; the server will still serve the Web UI." }
     }
 
     Runtime.getRuntime().addShutdownHook(
         thread(start = false) {
-            val logger = KotlinLogging.logger("KCEF")
-            logger.debug { "Shutting down KCEF" }
-            KCEF.disposeBlocking()
-            logger.debug { "KCEF shutdown complete" }
+            if (isKcefInitialized) {
+                val logger = KotlinLogging.logger("KCEF")
+                logger.debug { "Shutting down KCEF" }
+                KCEF.disposeBlocking()
+                logger.debug { "KCEF shutdown complete" }
+            }
         },
     )
 }

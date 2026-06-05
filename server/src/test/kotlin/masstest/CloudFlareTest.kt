@@ -7,6 +7,7 @@ import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
+import org.junit.jupiter.api.Assumptions.assumeTrue
 import suwayomi.tachidesk.manga.impl.Source
 import suwayomi.tachidesk.manga.impl.extension.Extension
 import suwayomi.tachidesk.manga.impl.extension.ExtensionsList
@@ -30,7 +31,10 @@ class CloudFlareTest {
 
         runBlocking {
             val extensions = ExtensionsList.getExtensionList()
-            with(extensions.first { it.name == "NHentai" }) {
+            val nhentaiExtension = extensions.firstOrNull { it.name == "NHentai" }
+            assumeTrue(nhentaiExtension != null, "NHentai extension is not available")
+
+            with(nhentaiExtension!!) {
                 if (!installed) {
                     Extension.installExtension(pkgName)
                 } else if (hasUpdate) {
@@ -39,11 +43,14 @@ class CloudFlareTest {
                 Unit
             }
 
-            nhentai =
+            val nhentaiSource =
                 Source
                     .getSourceList()
-                    .firstNotNullOf { it.id.toLong().takeIf { it == 3122156392225024195L } }
-                    .let(GetCatalogueSource::getCatalogueSourceOrNull) as HttpSource
+                    .firstOrNull { it.id.toLong() == 3122156392225024195L }
+            assumeTrue(nhentaiSource != null, "NHentai source is not available")
+
+            nhentai =
+                GetCatalogueSource.getCatalogueSourceOrNull(nhentaiSource!!.id.toLong()) as HttpSource
         }
         setLoggingEnabled(true)
     }

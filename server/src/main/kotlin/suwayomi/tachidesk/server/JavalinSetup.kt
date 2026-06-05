@@ -7,10 +7,14 @@ package suwayomi.tachidesk.server
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
+import android.app.Application
+import android.content.Context as AndroidContext
 import gg.jte.ContentType
 import gg.jte.TemplateEngine
 import io.github.oshai.kotlinlogging.KotlinLogging
 import io.javalin.Javalin
+import io.javalin.http.staticfiles.Location
+import org.eclipse.jetty.server.handler.ContextHandler
 import io.javalin.apibuilder.ApiBuilder.after
 import io.javalin.apibuilder.ApiBuilder.path
 import io.javalin.http.Context
@@ -41,6 +45,11 @@ import suwayomi.tachidesk.server.user.getUserFromWsContext
 import suwayomi.tachidesk.server.util.Browser
 import suwayomi.tachidesk.server.util.ServerSubpath
 import suwayomi.tachidesk.server.util.WebInterfaceManager
+import uy.kohesive.injekt.Injekt
+import uy.kohesive.injekt.api.get
+import uy.kohesive.injekt.injectLazy
+import suwayomi.tachidesk.server.ApplicationDirs
+import java.io.File
 import java.io.IOException
 import java.net.URI
 import java.net.URLEncoder
@@ -52,7 +61,30 @@ import kotlin.time.Duration.Companion.days
 object JavalinSetup {
     private val logger = KotlinLogging.logger {}
 
+    private const val UI_MODE_PREFS = "server_ui_mode"
+    private const val UI_MODE_KEY = "useKindleUi"
+
+    // runtime flag to choose UI mode. true = serve Kindle UI at `/`, false = serve original Web UI
+    private val uiModePreferences =
+        Injekt.get<Application>().getSharedPreferences(UI_MODE_PREFS, AndroidContext.MODE_PRIVATE)
+
+    private var useKindleUi: Boolean = uiModePreferences.getBoolean(UI_MODE_KEY, true)
+
+    private val applicationDirs: ApplicationDirs by injectLazy()
+
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
+
+    private fun serveKindleAsset(
+        ctx: Context,
+        assetName: String,
+        contentType: String,
+    ) {
+        val stream = JavalinSetup::class.java.getResourceAsStream("/kindle/$assetName") ?: throw NotFoundResponse()
+
+        ctx.header("Cache-Control", "no-store")
+        ctx.contentType(contentType)
+        ctx.result(stream)
+    }
 
     fun <T> future(block: suspend CoroutineScope.() -> T): CompletableFuture<T> = scope.future(block = block)
 
@@ -61,6 +93,16 @@ object JavalinSetup {
             Javalin.create { config ->
                 val templateEngine = TemplateEngine.createPrecompiled(ContentType.Html)
                 config.fileRenderer(JavalinJte(templateEngine))
+
+                // Serve Kindle UI from classpath first so it overrides any extracted/custom Web UI
+                val kindleHosted = ServerSubpath.maybeAddAsPrefix("/kindle")
+                config.staticFiles.add { staticFiles ->
+                    staticFiles.hostedPath = kindleHosted
+                    staticFiles.directory = "kindle"
+                    staticFiles.location = Location.CLASSPATH
+                    staticFiles.aliasCheck = ContextHandler.ApproveAliases()
+                    staticFiles.headers = mapOf("Cache-Control" to "no-store")
+                }
 
                 WebInterfaceManager.setup(config)
 
@@ -174,9 +216,47 @@ object JavalinSetup {
             )
         }
 
+        val kindlePath = ServerSubpath.maybeAddAsPrefix("/kindle")
+        val webuiPath = ServerSubpath.maybeAddAsPrefix("/webui")
+        val rootPath = ServerSubpath.asRootPath()
+
+        // Root handler: redirect to Kindle UI or serve original Web UI index depending on `useKindleUi`
+        app.get(rootPath) { ctx ->
+            if (useKindleUi) {
+                ctx.redirect("$kindlePath/")
+                return@get
+            }
+
+            // Try to serve the original Web UI index.html from the temp servable directory
+            val indexFile = File(applicationDirs.webUIServe, "index.html")
+            if (indexFile.exists()) {
+                ctx.header("content-type", "text/html")
+                ctx.header("cache-control", "max-age=0")
+                ctx.result(indexFile.readText())
+            } else {
+                // fallback: redirect to root so WebInterfaceManager can initialize/serve
+                ctx.redirect(ServerSubpath.asRootPath())
+            }
+        }
+
+        // Serve original web UI under /webui as well
+        app.get(webuiPath) { ctx ->
+            val indexFile = File(applicationDirs.webUIServe, "index.html")
+            if (indexFile.exists()) {
+                ctx.header("content-type", "text/html")
+                ctx.header("cache-control", "max-age=0")
+                ctx.result(indexFile.readText())
+            } else {
+                ctx.status(HttpStatus.NOT_FOUND)
+                ctx.result("Web UI not available")
+            }
+        }
+
         app.beforeMatched { ctx ->
             val isWebManifest =
                 listOf("site.webmanifest", "manifest.json", "login.html").any { ctx.path().endsWith(it) }
+            val isKindleUi = ctx.path().startsWith(kindlePath)
+            val isLandingPage = ctx.path() == rootPath
             val isPageIcon =
                 ctx.path().startsWith('/') &&
                     !ctx.path().substring(1).contains('/') &&
@@ -184,7 +264,7 @@ object JavalinSetup {
             val isPreFlight = ctx.method() == HandlerType.OPTIONS
             val isApi = ctx.path().startsWith(ServerSubpath.maybeAddAsPrefix("/api/"))
 
-            val requiresAuthentication = !isPreFlight && !isPageIcon && !isWebManifest
+            val requiresAuthentication = !isPreFlight && !isPageIcon && !isWebManifest && !isKindleUi && !isLandingPage
             if (!requiresAuthentication) {
                 return@beforeMatched
             }
@@ -203,7 +283,7 @@ object JavalinSetup {
                 return username == serverConfig.authUsername.value
             }
 
-            if (authMode == AuthMode.SIMPLE_LOGIN && !cookieValid() && !isApi) {
+            if (authMode == AuthMode.SIMPLE_LOGIN && !cookieValid() && !isApi && !isKindleUi) {
                 val url =
                     "$loginPath?redirect=" + URLEncoder.encode(ctx.path() + (ctx.queryString()?.let { "?" + it } ?: ""), Charsets.UTF_8)
                 ctx.header("Location", url)
@@ -230,6 +310,35 @@ object JavalinSetup {
         app.wsBefore {
             it.onConnect { ctx ->
                 ctx.setAttribute(Attribute.TachideskUser, getUserFromWsContext(ctx))
+            }
+        }
+
+        // Admin endpoints to get/set UI mode at runtime
+        val apiRoot = ServerSubpath.maybeAddAsPrefix("/api/v1/")
+        app.get("${apiRoot}ui-mode") { ctx ->
+            ctx.contentType("application/json")
+            ctx.result(
+                "{\"mode\":\"${if (useKindleUi) "kindle" else "original"}\"}"
+            )
+        }
+
+        app.post("${apiRoot}ui-mode") { ctx ->
+            try {
+                val body = ctx.body()
+                val mode = if (body.contains("kindle")) "kindle" else if (body.contains("original")) "original" else null
+
+                if (mode == null) {
+                    ctx.status(HttpStatus.BAD_REQUEST)
+                    ctx.result("invalid payload")
+                    return@post
+                }
+
+                useKindleUi = mode == "kindle"
+                uiModePreferences.edit().putBoolean(UI_MODE_KEY, useKindleUi).apply()
+                ctx.status(HttpStatus.NO_CONTENT)
+            } catch (e: Exception) {
+                ctx.status(HttpStatus.BAD_REQUEST)
+                ctx.result("invalid payload")
             }
         }
 

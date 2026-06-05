@@ -80,9 +80,20 @@ object SettingsRegistry {
     private val settings = mutableMapOf<String, SettingMetadata>()
 
     fun register(metadata: SettingMetadata) {
+        settings[metadata.name]?.let { existing ->
+            if (existing.protoNumber == metadata.protoNumber) {
+                return
+            }
+
+            throw IllegalStateException(
+                "Setting ${metadata.name} is already registered with protoNumber ${existing.protoNumber}",
+            )
+        }
+
         settings.values.find { it.protoNumber == metadata.protoNumber }?.let {
             throw IllegalStateException("Setting ${metadata.name} uses protoNumber ${it.protoNumber} already used by ${it.name}")
         }
+
         settings[metadata.name] = metadata
     }
 

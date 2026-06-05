@@ -45,6 +45,49 @@ import suwayomi.tachidesk.manga.model.table.MangaStatus
 import suwayomi.tachidesk.manga.model.table.MangaTable
 import java.util.concurrent.CompletableFuture
 
+data class MangaCondition(
+    val id: Int? = null,
+    val sourceId: Long? = null,
+    val url: String? = null,
+    val title: String? = null,
+    val thumbnailUrl: String? = null,
+    val initialized: Boolean? = null,
+    val artist: String? = null,
+    val author: String? = null,
+    val description: String? = null,
+    val genre: List<String>? = null,
+    val status: MangaStatus? = null,
+    val inLibrary: Boolean? = null,
+    val inLibraryAt: Long? = null,
+    val realUrl: String? = null,
+    val lastFetchedAt: Long? = null,
+    val chaptersLastFetchedAt: Long? = null,
+    val categoryIds: List<Int>? = null,
+) : HasGetOp {
+    override fun getOp(): Op<Boolean>? {
+        val opAnd = OpAnd()
+        opAnd.eq(id, MangaTable.id)
+        opAnd.eq(sourceId, MangaTable.sourceReference)
+        opAnd.eq(url, MangaTable.url)
+        opAnd.eq(title, MangaTable.title)
+        opAnd.eq(thumbnailUrl, MangaTable.thumbnail_url)
+        opAnd.eq(initialized, MangaTable.initialized)
+        opAnd.eq(artist, MangaTable.artist)
+        opAnd.eq(author, MangaTable.author)
+        opAnd.eq(description, MangaTable.description)
+        opAnd.andWhereAll(genre) { MangaTable.genre like "%$it%" }
+        opAnd.eq(status?.value, MangaTable.status)
+        opAnd.eq(inLibrary, MangaTable.inLibrary)
+        opAnd.eq(inLibraryAt, MangaTable.inLibraryAt)
+        opAnd.eq(realUrl, MangaTable.realUrl)
+        opAnd.eq(lastFetchedAt, MangaTable.lastFetchedAt)
+        opAnd.eq(chaptersLastFetchedAt, MangaTable.chaptersLastFetchedAt)
+        opAnd.andWhere(categoryIds) { CategoryMangaTable.category inList it }
+
+        return opAnd.op
+    }
+}
+
 class MangaQuery {
     @RequireAuth
     fun manga(
@@ -93,49 +136,6 @@ class MangaQuery {
         override val by: MangaOrderBy,
         override val byType: SortOrder? = null,
     ) : Order<MangaOrderBy>
-
-    data class MangaCondition(
-        val id: Int? = null,
-        val sourceId: Long? = null,
-        val url: String? = null,
-        val title: String? = null,
-        val thumbnailUrl: String? = null,
-        val initialized: Boolean? = null,
-        val artist: String? = null,
-        val author: String? = null,
-        val description: String? = null,
-        val genre: List<String>? = null,
-        val status: MangaStatus? = null,
-        val inLibrary: Boolean? = null,
-        val inLibraryAt: Long? = null,
-        val realUrl: String? = null,
-        val lastFetchedAt: Long? = null,
-        val chaptersLastFetchedAt: Long? = null,
-        val categoryIds: List<Int>? = null,
-    ) : HasGetOp {
-        override fun getOp(): Op<Boolean>? {
-            val opAnd = OpAnd()
-            opAnd.eq(id, MangaTable.id)
-            opAnd.eq(sourceId, MangaTable.sourceReference)
-            opAnd.eq(url, MangaTable.url)
-            opAnd.eq(title, MangaTable.title)
-            opAnd.eq(thumbnailUrl, MangaTable.thumbnail_url)
-            opAnd.eq(initialized, MangaTable.initialized)
-            opAnd.eq(artist, MangaTable.artist)
-            opAnd.eq(author, MangaTable.author)
-            opAnd.eq(description, MangaTable.description)
-            opAnd.andWhereAll(genre) { MangaTable.genre like "%$it%" }
-            opAnd.eq(status?.value, MangaTable.status)
-            opAnd.eq(inLibrary, MangaTable.inLibrary)
-            opAnd.eq(inLibraryAt, MangaTable.inLibraryAt)
-            opAnd.eq(realUrl, MangaTable.realUrl)
-            opAnd.eq(lastFetchedAt, MangaTable.lastFetchedAt)
-            opAnd.eq(chaptersLastFetchedAt, MangaTable.chaptersLastFetchedAt)
-            opAnd.andWhere(categoryIds) { CategoryMangaTable.category inList it }
-
-            return opAnd.op
-        }
-    }
 
     data class MangaStatusFilter(
         override val isNull: Boolean? = null,

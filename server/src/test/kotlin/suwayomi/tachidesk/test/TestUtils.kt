@@ -56,13 +56,15 @@ fun createChapters(
     amount: Int,
     read: Boolean,
 ) {
-    val list = listOf((0 until amount)).flatten().map { 1 }
+    val list = (0 until amount).toList()
+    val prefix = "${mangaId}_${System.currentTimeMillis()}"
     transaction {
         ChapterTable
             .batchInsert(list) {
-                this[ChapterTable.url] = "$it"
-                this[ChapterTable.name] = "$it"
-                this[ChapterTable.sourceOrder] = it
+                val idx = it
+                this[ChapterTable.url] = "${prefix}_$idx"
+                this[ChapterTable.name] = "Chapter $idx"
+                this[ChapterTable.sourceOrder] = idx
                 this[ChapterTable.isRead] = read
                 this[ChapterTable.manga] = mangaId
             }

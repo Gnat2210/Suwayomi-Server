@@ -14,11 +14,13 @@ import eu.kanade.tachiyomi.source.local.LocalSource
 import io.github.oshai.kotlinlogging.KotlinLogging
 import org.jetbrains.exposed.sql.Database
 import org.junit.jupiter.api.BeforeAll
+import org.koin.core.context.GlobalContext
 import org.koin.core.context.startKoin
 import suwayomi.tachidesk.server.ApplicationDirs
 import suwayomi.tachidesk.server.JavalinSetup
 import suwayomi.tachidesk.server.ServerConfig
 import suwayomi.tachidesk.server.androidCompat
+import suwayomi.tachidesk.server.applicationSetup
 import suwayomi.tachidesk.server.database.databaseUp
 import suwayomi.tachidesk.server.serverConfig
 import suwayomi.tachidesk.server.serverModule
@@ -36,6 +38,8 @@ import java.util.Locale
 
 open class ApplicationTest {
     companion object {
+        private fun isTestEnvironment(): Boolean = System.getProperty("org.gradle.test.worker") != null
+
         @BeforeAll
         @JvmStatic
         fun beforeAll() {
@@ -43,9 +47,9 @@ open class ApplicationTest {
                 val dataRoot = File(BASE_PATH).absolutePath
                 System.setProperty("$CONFIG_PREFIX.server.rootDir", dataRoot)
 
-                testingSetup()
-
-                databaseSetup()
+                if (GlobalContext.getOrNull() == null) {
+                    applicationSetup()
+                }
 
                 initializedTheApp = true
             }
@@ -79,17 +83,21 @@ open class ApplicationTest {
 
             // initialize Koin modules
             val app = App()
-            startKoin {
-                modules(
-                    createAppModule(app),
-                    androidCompatModule(),
-                    configManagerModule(),
-                    serverModule(applicationDirs),
-                )
+            if (GlobalContext.getOrNull() == null) {
+                startKoin {
+                    modules(
+                        createAppModule(app),
+                        androidCompatModule(),
+                        configManagerModule(),
+                        serverModule(applicationDirs),
+                    )
+                }
             }
 
             // Make sure only one instance of the app is running
-            handleAppMutex()
+            if (!isTestEnvironment()) {
+                handleAppMutex()
+            }
 
             // Load Android compatibility dependencies
             AndroidCompatInitializer().init()
@@ -128,7 +136,7 @@ open class ApplicationTest {
             }
 
             // create system tray
-            if (serverConfig.systemTrayEnabled.value) {
+            if (!isTestEnvironment() && serverConfig.systemTrayEnabled.value) {
                 try {
                     SystemTray.create()
                 } catch (e: Throwable) {
@@ -157,7 +165,7 @@ open class ApplicationTest {
             // in-memory database, don't discard database between connections/transactions
             val db = Database.connect("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;", "org.h2.Driver")
 
-            databaseUp(db)
+            databaseUp()
 
             LocalSource.register()
         }

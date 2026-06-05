@@ -25,6 +25,13 @@ import suwayomi.tachidesk.test.createLibraryManga
 class CategoryMangaTest : ApplicationTest() {
     @Test
     fun getCategoryMangaList() {
+        clearTables(
+            ChapterTable,
+            CategoryMangaTable,
+            MangaTable,
+            CategoryTable,
+        )
+
         val emptyCats = CategoryManga.getCategoryMangaList(DEFAULT_CATEGORY_ID).size
         assertEquals(0, emptyCats, "Default category should be empty at start")
         val mangaId = createLibraryManga("Psyren")

@@ -9,7 +9,7 @@ package suwayomi.tachidesk.manga.model.dataclass
 
 import kotlin.math.min
 
-open class PaginatedList<T>(
+data class PaginatedList<T>(
     val page: List<T>,
     val hasNextPage: Boolean,
 )
